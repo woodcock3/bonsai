@@ -22,7 +22,7 @@ jobs:
         run: npm run build
 
       - name: Commit changes
-        uses: EndBug/add-and-commit@v5
+        uses: EndBug/add-and-commit@v9
         with:
           author_name: Ciaran Walsh
           author_email: ciaran@joomla51.com
