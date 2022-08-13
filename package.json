@@ -21,7 +21,7 @@
     "postcss-cli": "^10.0.0",
     "postcss-combine-media-query": "^1.0.1",
     "postcss-import": "^14.1.0",
-    "postcss-inline-svg": "^5.0.0",
+    "postcss-inline-svg": "^4.1.0",
     "postcss-mixins": "^9.0.3",
     "postcss-nested": "^5.0.6",
     "postcss-nesting": "^10.1.10",
