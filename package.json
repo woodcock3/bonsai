@@ -6,8 +6,8 @@
     "build:sass": "sass  --no-source-map src/sass:./_tmp",
     "build:postcss": "postcss --config src/sass ./_tmp/bansai.css -r --verbose",
     "minify:eleventy": "ELEVENTY_ENV=prod npx @11ty/eleventy --pathprefix=bonsai",
-    "build": "NODE_ENV=dev npm-run-all build:sass build:postcss build:eleventy",
-    "minify": "NODE_ENV=production npm-run-all build:sass build:postcss minify:eleventy",
+    "build": "NODE_ENV=dev npm-run-all build:postcss build:eleventy",
+    "minify": "NODE_ENV=production npm-run-all build:postcss minify:eleventy",
     "start": "npm-run-all --parallel dev:*"
   },
   "devDependencies": {
