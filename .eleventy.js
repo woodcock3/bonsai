@@ -1,9 +1,9 @@
-const htmlmin = require('html-minifier');
+const htmlmin = require("html-minifier");
 const now = String(Date.now());
 const sass = require("sass");
 const meta = require("./src/_data/meta");
 
-const TEMPLATE_ENGINE = 'liquid';
+const TEMPLATE_ENGINE = "liquid";
 
 
 module.exports = function (eleventyConfig) {
@@ -21,15 +21,15 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
 
   // WATCH the css files
-  eleventyConfig.addWatchTarget('./src/css/bonsai.css');
-  eleventyConfig.addPassthroughCopy({ './_tmp': './assets/css' });
+  eleventyConfig.addWatchTarget("./src/css/bonsai.css");
+  eleventyConfig.addPassthroughCopy({ "./_tmp": "./assets/css" });
   
   // WATCH the js files for esbuild in scripts.11ty.js
-  eleventyConfig.addWatchTarget('./assets/js');
+  eleventyConfig.addWatchTarget("./assets/js");
 
   // SHORTCODES
   // Add cache busting with {% version %} time string
-  eleventyConfig.addShortcode('version', function () {
+  eleventyConfig.addShortcode("version", function () {
     return now
   });
 
@@ -44,25 +44,25 @@ module.exports = function (eleventyConfig) {
   let env = process.env.ELEVENTY_ENV;
 
   if (env === "prod") {
-    eleventyConfig.addPassthroughCopy({ './assets/images/favicon/11up.jpg': './assets/images/11up.jgp'})
+    eleventyConfig.addPassthroughCopy({ "./assets/images/favicon/11up.jpg": "./assets/images/11up.jgp"})
   }
 
   eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
     if (
       process.env.ELEVENTY_ENV === "prod" &&
       outputPath &&
-      outputPath.endsWith('.html')
+      outputPath.endsWith(".html")
     ) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
         collapseWhitespace: true,
-      })
+      });
       return minified
     }
 
     return content
-  })
+  });
   
   // Let Eleventy transform HTML files as liquidjs
   // So that we can use .html instead of .liquid
@@ -72,10 +72,10 @@ module.exports = function (eleventyConfig) {
     dataTemplateEngine: TEMPLATE_ENGINE,
     markdownTemplateEngine: TEMPLATE_ENGINE,
     htmlTemplateEngine: TEMPLATE_ENGINE,
-    templateFormats: ['html', 'md', '11ty.js', TEMPLATE_ENGINE],
+    templateFormats: ["html", "md", "11ty.js", TEMPLATE_ENGINE],
     dir: {
-      input: 'src',
-      output: 'dist',
+      input: "src",
+      output: "dist",
     },
   };
 };
