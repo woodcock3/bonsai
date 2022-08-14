@@ -1,4 +1,4 @@
-name: Build dist files
+name: Build 11ty and css
 on:
   push:
     branches:
@@ -6,7 +6,7 @@ on:
       
 # Conditional environmental if's      
 env:
-  UPDATE_NPM: true # false = deploy eleventy , true = update npm
+  UPDATE_NPM: false # false = deploy eleventy , true = update npm
 
 jobs:
   run:
