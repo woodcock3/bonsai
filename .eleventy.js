@@ -1,7 +1,6 @@
 const htmlmin = require("html-minifier");
 const now = String(Date.now());
 const sass = require("sass");
-const meta = require("./src/_data/meta");
 
 const TEMPLATE_ENGINE = "liquid";
 
@@ -69,13 +68,14 @@ module.exports = function (eleventyConfig) {
   // 11ty.js template format also picks up on the esbuild.11ty.js script
 
   return {
-    dataTemplateEngine: TEMPLATE_ENGINE,
-    markdownTemplateEngine: TEMPLATE_ENGINE,
-    htmlTemplateEngine: TEMPLATE_ENGINE,
-    templateFormats: ["html", "md", "11ty.js", TEMPLATE_ENGINE],
     dir: {
       input: "src",
       output: "dist",
+      data: "_data",
+    },
+    templateFormats: ["html", "md", "11ty.js", TEMPLATE_ENGINE],
+    markdownTemplateEngine: TEMPLATE_ENGINE,
+    htmlTemplateEngine: TEMPLATE_ENGINE,
     },
   };
 };
