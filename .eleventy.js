@@ -20,7 +20,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
 
   // WATCH the scss files
-  eleventyConfig.addWatchTarget('./assets/scss/city.scss');
+  eleventyConfig.addWatchTarget('./src/sass/bonsai.css');
   eleventyConfig.addPassthroughCopy({ './_tmp': './assets/css' });
   
   // WATCH the js files for esbuild in scripts.11ty.js
