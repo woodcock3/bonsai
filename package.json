@@ -1,10 +1,10 @@
 {
   "scripts": {
     "dev:eleventy": "ELEVENTY_ENV=dev npx @11ty/eleventy --serve",
-    "dev:sass": "sass  --no-source-map --watch assets/scss:./_tmp",
+    "dev:sass": "sass  --no-source-map --watch src/sass:./_tmp",
     "build:eleventy": "ELEVENTY_ENV=dev npx @11ty/eleventy --pathprefix=bonsai",
-    "build:sass": "sass  --no-source-map assets/scss:./_tmp",
-    "build:postcss": "postcss --config assets/scss ./_tmp/city.css -r --verbose",
+    "build:sass": "sass  --no-source-map src/sass:./_tmp",
+    "build:postcss": "postcss --config src/sass ./_tmp/bansai.css -r --verbose",
     "minify:eleventy": "ELEVENTY_ENV=prod npx @11ty/eleventy --pathprefix=bonsai",
     "build": "NODE_ENV=dev npm-run-all build:sass build:postcss build:eleventy",
     "minify": "NODE_ENV=production npm-run-all build:sass build:postcss minify:eleventy",
