@@ -1,6 +1,7 @@
 const htmlmin = require('html-minifier');
 const now = String(Date.now());
 const sass = require("sass");
+const meta = require("./src/_data/meta");
 
 const TEMPLATE_ENGINE = 'liquid';
 
