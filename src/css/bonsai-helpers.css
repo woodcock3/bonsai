@@ -1,10 +1,10 @@
-@import '../variables.css';
-@import '../mixins.css';
+@import '../sass/variables.css';
+@import '../sass/mixins.css';
 
-@import '../helpers/_background.css';
-@import '../helpers/_layout.css';
-@import '../helpers/_position.css';
-@import '../helpers/_shadows.css';
-@import '../helpers/_spacing.css';
-@import '../helpers/_transform.css';
-@import '../helpers/_typography.css';
+@import '../sass/helpers/_background.css';
+@import '../sass/helpers/_layout.css';
+@import '../sass/helpers/_position.css';
+@import '../sass/helpers/_shadows.css';
+@import '../sass/helpers/_spacing.css';
+@import '../sass/helpers/_transform.css';
+@import '../sass/helpers/_typography.css';
