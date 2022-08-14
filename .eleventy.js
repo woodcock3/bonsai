@@ -19,8 +19,8 @@ module.exports = function (eleventyConfig) {
   // Copy favicon to route of /_site
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
 
-  // WATCH the scss files
-  eleventyConfig.addWatchTarget('./src/sass/bonsai.css');
+  // WATCH the css files
+  eleventyConfig.addWatchTarget('./src/css/bonsai.css');
   eleventyConfig.addPassthroughCopy({ './_tmp': './assets/css' });
   
   // WATCH the js files for esbuild in scripts.11ty.js
