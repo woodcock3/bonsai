@@ -4,7 +4,7 @@
     "dev:sass": "sass  --no-source-map --watch src/sass:./_tmp",
     "build:eleventy": "ELEVENTY_ENV=dev npx @11ty/eleventy --pathprefix=bonsai",
     "build:sass": "sass  --no-source-map src/sass:./_tmp",
-    "build:postcss": "postcss --config src/css src/css/bansai.css -o assets/css/bonsai.css --verbose",
+    "build:postcss": "postcss --config src/css src/css/test.css -o assets/css/bonsai.css --verbose",
     "minify:eleventy": "ELEVENTY_ENV=prod npx @11ty/eleventy --pathprefix=bonsai",
     "build": "NODE_ENV=dev npm-run-all build:postcss build:eleventy",
     "minify": "NODE_ENV=production npm-run-all build:postcss minify:eleventy",
