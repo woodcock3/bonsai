@@ -7,6 +7,11 @@ const TEMPLATE_ENGINE = "liquid";
 
 module.exports = function (eleventyConfig) {
 
+  // allow dynamic partials, so we can load data files as needed.
+  eleventyConfig.setLiquidOptions({
+    dynamicPartials: true,
+  });
+  
   // COPY
   // Copy Static Files to /_Site
   eleventyConfig.addPassthroughCopy({
