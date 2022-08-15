@@ -76,6 +76,5 @@ module.exports = function (eleventyConfig) {
     templateFormats: ["html", "md", "11ty.js", TEMPLATE_ENGINE],
     markdownTemplateEngine: TEMPLATE_ENGINE,
     htmlTemplateEngine: TEMPLATE_ENGINE,
-    },
   };
 };
