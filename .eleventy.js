@@ -79,7 +79,7 @@ module.exports = function (eleventyConfig) {
   return {
     dir: {
       input: "src",
-      output: "dist",
+      output: "docs",
       data: "_data",
     },
     templateFormats: ["html", "md", "11ty.js", TEMPLATE_ENGINE],
