@@ -1,3 +1,4 @@
+const yaml = require("js-yaml");
 const htmlmin = require("html-minifier");
 const now = String(Date.now());
 const sass = require("sass");
