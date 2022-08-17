@@ -3,4 +3,4 @@ env: process.env.ELEVENTY_ENV
 # Author
 name: "Bonsai css"
 author: Rusticola
-url: https://rusticola.co.uk
+myurl: https://rusticola.co.uk
