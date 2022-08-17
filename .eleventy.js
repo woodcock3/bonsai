@@ -8,6 +8,9 @@ const TEMPLATE_ENGINE = "liquid";
 
 module.exports = function (eleventyConfig) {
 
+  // To Support .yaml Extension in _data
+  eleventyConfig.addDataExtension("yml", contents => yaml.load(contents));
+
   // allow dynamic partials, so we can load data files as needed.
   eleventyConfig.setLiquidOptions({
     dynamicPartials: true,
