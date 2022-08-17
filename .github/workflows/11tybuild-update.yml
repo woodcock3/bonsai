@@ -28,24 +28,24 @@ jobs:
         if: env.UPDATE_NPM != 'true'
         run: npm run build
         
-      - name: Deploy
-        if: env.UPDATE_NPM != 'true'
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          publish_dir: ./dist 
-          publish_branch: gh-pages
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-        
-#      - name: Commit changes
+#      - name: Deploy
 #        if: env.UPDATE_NPM != 'true'
-#        uses: EndBug/add-and-commit@v9
+#        uses: peaceiris/actions-gh-pages@v3
 #        with:
-#          author_name: woodcock3
-#          author_email: woodcock3-fake-email
-#          message: "Add dist files"
-#          add: "dist"
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#          publish_dir: ./dist 
+#          publish_branch: gh-pages
+#          github_token: ${{ secrets.GITHUB_TOKEN }}
+        
+      - name: Commit changes
+        if: env.UPDATE_NPM != 'true'
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: woodcock3
+          author_email: woodcock3-fake-email
+          message: "Add docs files"
+          add: "docs"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
           
       - name: pull request on npm update
