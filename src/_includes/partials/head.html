@@ -2,16 +2,16 @@
 <html lang='en'>
   <head>
     <meta charset='utf-8'>
-    <title>bonsai.css</title>
+    <title>{{ meta.name }}</title>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta name='apple-mobile-web-app-title' content='bonsai.css'>
     <meta name='application-name' content='bonsai.css'>
     <meta name='msapplication-config' content='icons/browserconfig.xml'>
     <meta name='theme-color' content='#ffffff'>
     <meta name="description" content="Largely classless, blazing fast and super light-weight. Bonsai, a CSS framework for modern browsers.">
-    <link id='stylesheet' rel='stylesheet' href="{{ '/expected/bonsai.min.css?v=' | url }}{% version %}">
-    <link rel='manifest' href="{{ '/icons/manifest.json?v=' | url }}{% version %}">
-    <link rel='shortcut icon' href="{{ '/icons/favicon.ico?v=' | url }}{% version %}">
+    <link rel='stylesheet' href="{{ '/expected/bonsai.css?v=' | url }}{% version %}" />
+    <link rel='manifest' href="{{ '/icons/manifest.json?v=' | url }}{% version %}" />
+    <link rel='shortcut icon' href="{{ '/icons/favicon.ico?v=' | url }}{% version %}" />
 
     <style>
     section {
