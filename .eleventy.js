@@ -28,7 +28,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/assets/image");
 
   // Copy favicon to route of /_site
-  eleventyConfig.addPassthroughCopy("./logo.png": ".assets/logo.png");
+  eleventyConfig.addPassthroughCopy("./logo.png": "./assets/logo.png");
 
   // WATCH the css files
   eleventyConfig.addWatchTarget("./src/css/bonsai.css");
