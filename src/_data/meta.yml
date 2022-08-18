@@ -1,7 +1,7 @@
 env: process.env.ELEVENTY_ENV
 
 # Author
-name: "Bonsai css"
+name: "Bonsai CSS"
 author: Rusticola
 myurl: https://rusticola.co.uk
 github_url: https://github.com/woodcock3/bonsai
