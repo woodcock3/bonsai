@@ -21,6 +21,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "./assets/js/site.js": "./assets/js/site.js",
     "./expected": "./expected",
+    "./icon": "./assets/icon",
   });
 
   // Copy Image Folder to /_site
