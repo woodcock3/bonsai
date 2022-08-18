@@ -8,7 +8,7 @@ const TEMPLATE_ENGINE = "liquid";
 
 module.exports = function (eleventyConfig) {
 
-  // To Support .yaml Extension in _data
+  // To Support .yml Extension in _data
   eleventyConfig.addDataExtension("yml", contents => yaml.load(contents));
 
   // allow dynamic partials, so we can load data files as needed.
@@ -20,6 +20,7 @@ module.exports = function (eleventyConfig) {
   // Copy Static Files to /_Site
   eleventyConfig.addPassthroughCopy({
     "./assets/js/site.js": "./assets/js/site.js",
+    "./expected",
   });
 
   // Copy Image Folder to /_site
