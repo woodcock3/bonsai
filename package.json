@@ -24,6 +24,7 @@
     "postcss": "^8.4.12",
     "postcss-cli": "^10.0.0",
     "postcss-combine-media-query": "^1.0.1",
+    "postcss-css-variables": "^0.18.0",
     "postcss-import": "^14.1.0",
     "postcss-inline-svg": "^5.0.0",
     "postcss-mixins": "^9.0.3",
