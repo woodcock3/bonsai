@@ -1,6 +1,7 @@
 // postcss.config.js
 
 const postcssImport = require('postcss-import');
+var cssvariables = require("postcss-css-variables");
 const postcssInlineSvg = require('postcss-inline-svg');
 const postcssSimpleVars = require('postcss-simple-vars');
 const postcssNested = require('postcss-nested');
@@ -27,6 +28,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
 module.exports = {
   plugins: [
     postcssImport,
+    cssvariables,
     postcssInlineSvg, 
     postcssMixins, 
     postcssSimpleVars, 
