@@ -20,7 +20,7 @@ const cssnano = require('cssnano')({
 const purgecss = require('@fullhuman/postcss-purgecss')({
   content: ['./**/*.html'],
   defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
-  css: ['bansai.css'],
+  css: ['test.css'],
   safelist: {}
 });
 
