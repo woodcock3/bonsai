@@ -28,11 +28,11 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
 module.exports = {
   plugins: [
     postcssImport,
-    cssvariables,
     postcssInlineSvg, 
     postcssMixins, 
     postcssSimpleVars, 
-    postcssNested, 
+    postcssNested,
+    cssvariables,
     postcssCombineMediaQuery,
     autoprefixer,
     ...(process.env.NODE_ENV === "production" ? [cssnano, purgecss] : [])
