@@ -33,8 +33,8 @@ module.exports = {
     postcssMixins, 
     postcssSimpleVars, 
     postcssNested,
-    cssvariables,
     postcssCombineMediaQuery,
+    cssvariables,
     ...(process.env.NODE_ENV === "production" ? [cssnano, purgecss] : [])
   ],
 };
