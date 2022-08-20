@@ -6,6 +6,7 @@ const postcssInlineSvg = require('postcss-inline-svg');
 const postcssSimpleVars = require('postcss-simple-vars');
 const postcssNested = require('postcss-nested');
 const postcssMixins = require('postcss-mixins');
+const postcssCustomMedia = require('postcss-custom-media');
 const postcssCombineMediaQuery = require('postcss-combine-media-query');
 
 const autoprefixer = require('autoprefixer');
@@ -35,6 +36,7 @@ module.exports = {
     postcssNested,
     postcssCombineMediaQuery,
     cssvariables,
+    postcssCustomMedia,
     ...(process.env.NODE_ENV === "production" ? [cssnano, purgecss] : [])
   ],
 };
