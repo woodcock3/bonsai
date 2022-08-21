@@ -5,7 +5,8 @@
 }
 
 @define-mixin svar-mq $prop $value {
-  $(prop): var($(value)) !default;
+  [style*="$(value):"] {
+    $(prop): var($(value)) !default;
   }
   @media only screen and (--sm-viewport) {
     $(prop): var($(value)-sm) !default;
