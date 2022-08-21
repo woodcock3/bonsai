@@ -42,3 +42,13 @@
   --accent-border: 0;
   --accent-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
 }
+
+/* ===========================
+ * Viewports are used in mixins.css, base/_grid-layout.css & helper/_layout.css
+ * =========================== */
+
+@custom-media --xs-viewport (min-width: 440px !default);
+@custom-media --sm-viewport (min-width: 640px !default);
+@custom-media --md-viewport (min-width: 768px !default);
+@custom-media --lg-viewport (min-width: 1024px !default);
+@custom-media --xl-viewport (min-width: var(--wrapper));
