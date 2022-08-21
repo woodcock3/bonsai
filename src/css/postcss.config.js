@@ -34,9 +34,9 @@ module.exports = {
     postcssMixins, 
     postcssSimpleVars, 
     postcssNesting,
+    postcssCustomMedia,
     postcssCombineMediaQuery,
     cssvariables,
-    postcssCustomMedia,
     ...(process.env.NODE_ENV === "production" ? [cssnano, purgecss] : [])
   ],
 };
