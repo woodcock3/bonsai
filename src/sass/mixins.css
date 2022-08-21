@@ -4,7 +4,7 @@
   }
 }
 
-define-mixin svar-mq $prop, $var {
+@define-mixin svar-mq $prop, $var {
   [style*="$(var):"] {
     $(prop): var($(var)) !important;
   }
