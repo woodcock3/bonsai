@@ -4,7 +4,7 @@ const postcssImport = require('postcss-import');
 const cssvariables = require("postcss-css-variables");
 const postcssInlineSvg = require('postcss-inline-svg');
 const postcssSimpleVars = require('postcss-simple-vars');
-const postcssNested = require('postcss-nested');
+const postcssNesting = require('postcss-nesting');
 const postcssMixins = require('postcss-mixins');
 const postcssCustomMedia = require('postcss-custom-media');
 const postcssCombineMediaQuery = require('postcss-combine-media-query');
@@ -33,7 +33,7 @@ module.exports = {
     postcssInlineSvg, 
     postcssMixins, 
     postcssSimpleVars, 
-    postcssNested,
+    postcssNesting,
     postcssCombineMediaQuery,
     cssvariables,
     postcssCustomMedia,
