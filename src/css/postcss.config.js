@@ -11,7 +11,8 @@ const postcssPresets= require('postcss-preset-env')({
   stage: 3,
   features: {
     "custom-media-queries": true,
-    "nesting-rules": true
+    "nesting-rules": true,
+    "nested-calc": true
   }
 });
 
