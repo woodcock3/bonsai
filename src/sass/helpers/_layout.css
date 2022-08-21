@@ -8,16 +8,16 @@
   padding-left: var(--gutter);
   padding-right: var(--gutter);
 
-  @nest @media only screen and (--sm-viewport) {
+  @nest @media (--sm-viewport) & {
     --gutter: var(--gutter-sm);
   }
-  @nest @media only screen and (--md-viewport) {
+  @nest @media (--md-viewport) & {
     --gutter: var(--gutter-md);
   }
-  @nest @media only screen and (--lg-viewport) {
+  @nest @media (--lg-viewport) & {
     --gutter: var(--gutter-lg);
   }
-  @nest @media only screen and (--xl-viewport) {
+  @nest @media (--xl-viewport) & {
     --gutter: var(--gutter-xl);
   }
 }
