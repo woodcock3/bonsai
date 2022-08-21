@@ -1,7 +1,8 @@
 @custom-media --sm-viewport (min-width: 640px);
 @custom-media --md-viewport (min-width: 768px);
 @custom-media --lg-viewport (min-width: 1024px);
-@custom-media --xl-viewport (min-width: 1280px);
+/* --wrapper is in the variable.css and is also used in layout.css */
+@custom-media --xl-viewport (min-width: var(--wrapper));
 
 @define-mixin svar $prop, $var {
   [style*="$(var):"] {
