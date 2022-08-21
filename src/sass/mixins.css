@@ -1,10 +1,10 @@
-@define-mixin svar $prop, $var {
+@define-mixin svar $prop $var {
   [style*="$(var):"] {
     $(prop): var($(var)) !default;
   }
 }
 
-@define-mixin svar-mq $prop, $var {
+@define-mixin svar-mq $prop $var {
   [style*="$(var):"] {
     $(prop): var($(var)) !default;
   }
