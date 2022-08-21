@@ -36,6 +36,7 @@
   --typo-size-6: 1rem;
 
   --wrapper: 1280px !default;
+  --gutter: 0.5rem;
 
   --transition: all ease .4s;
 
