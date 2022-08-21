@@ -1,6 +1,6 @@
 @define-mixin svar $prop $value {
-  [style*="$(value):"] {
-    $(prop): var($(value)) !default;
+  [style*="$value:"] {
+    $prop: var($value) !default;
   }
 }
 
