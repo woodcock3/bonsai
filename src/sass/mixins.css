@@ -1,49 +1,49 @@
-@define-mixin svar $prop $var {
-  [style*="$(var):"] {
-    $(prop): var($(var)) !default;
+@define-mixin svar $prop $value {
+  [style*="$(value):"] {
+    $(prop): var($(value)) !default;
   }
 }
 
-@define-mixin svar-mq $prop $var {
-  [style*="$(var):"] {
-    $(prop): var($(var)) !default;
+@define-mixin svar-mq $prop $value {
+  [style*="$(value):"] {
+    $(prop): var($(value)) !default;
   }
   @media only screen and (--sm-viewport) {
-    [style*="$(var)-sm:"] {
-      $(prop): var($(var)-sm) !default;
+    [style*="$(value)-sm:"] {
+      $(prop): var($(value)-sm) !default;
     }
   }
   @media only screen and (--md-viewport) {
-    [style*="$(var)-md:"] {
-      $(prop): var($(var)-md) !default;
+    [style*="$(value)-md:"] {
+      $(prop): var($(value)-md) !default;
     }
   }
   @media only screen and (--lg-viewport) {
-    [style*="$(var)-lg:"] {
-      $(prop): var($(var)-lg) !default;
+    [style*="$(value)-lg:"] {
+      $(prop): var($(value)-lg) !default;
     }
   }
   @media only screen and (--xl-viewport) {
-    [style*="$(var)-xl:"] {
-      $(prop): var($(var)-xl) !default;
+    [style*="$(value)-xl:"] {
+      $(prop): var($(value)-xl) !default;
     }
   }
 }
 
-@define-mixin svar:hover $prop, $var {
-  [style*="$(var):"]:hover {
-    $(prop): var($(var), var(--$(prop)));
+@define-mixin svar:hover $prop, $value {
+  [style*="$(value):"]:hover {
+    $(prop): var($(value), var(--$(prop)));
   }
 }
 
-@define-mixin svar:before $prop, $var {
-  [style*="$(var):"]::before {
-    $(prop): var($(var), var(--$(prop)));
+@define-mixin svar:before $prop, $value {
+  [style*="$(value):"]::before {
+    $(prop): var($(value), var(--$(prop)));
   }
 }
 
-@define-mixin svar:after $prop, $var {
-  [style*="$(var):"]::after {
-    $(prop): var($(var), var(--$(prop)));
+@define-mixin svar:after $prop, $value {
+  [style*="$(value):"]::after {
+    $(prop): var($(value), var(--$(prop)));
   }
 }
