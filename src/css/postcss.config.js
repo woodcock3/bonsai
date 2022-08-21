@@ -35,9 +35,9 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
 module.exports = {
   plugins: [
     postcssImport,
-    postcssPresets,
     postcssInlineSvg, 
-    postcssMixins, 
+    postcssMixins,
+    postcssPresets,
     postcssSimpleVars, 
     postcssCombineMediaQuery,
     cssvariables,
