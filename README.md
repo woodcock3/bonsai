@@ -35,3 +35,13 @@ npm run watch
 ## Documentation
 
 For full documentation, visit [https://www.bonsaicss.com](https://www.bonsaicss.com).
+
+## Issue with postcss nested
+
+Does not compile @ rules correctly inside a media query. 
+
+@media only screen and (min-width:640px){.wrapper,[style*="--wrapper:"]{--gutter:var(--gutter-sm)}}
+@media only screen and (min-width:768px){.wrapper,[style*="--wrapper:"]{--gutter:var(--gutter-md)}}
+@media only screen and (min-width:1024px){.wrapper,[style*="--wrapper:"]{--gutter:var(--gutter-lg)}}
+@media only screen and (min-width:1280px){.wrapper,[style*="--wrapper:"]{--gutter:var(--gutter-xl)}}
+
