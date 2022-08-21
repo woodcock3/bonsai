@@ -7,17 +7,17 @@
   margin-right: auto;
   padding-left: var(--gutter);
   padding-right: var(--gutter);
+}
 
-  @media (--sm-viewport) {
-    --gutter: var(--gutter-sm);
+@media (--sm-viewport) {
+  --gutter: var(--gutter-sm);
+}
+@media (--md-viewport) {
+  --gutter: var(--gutter-md);
+}
+@media (--lg-viewport) {
+  --gutter: var(--gutter-lg);
   }
-  @media (--md-viewport) {
-    --gutter: var(--gutter-md);
-  }
-  @media (--lg-viewport) {
-    --gutter: var(--gutter-lg);
-  }
-  @media (--xl-viewport) {
-    --gutter: var(--gutter-xl);
-  }
+@media (--xl-viewport) {
+  --gutter: var(--gutter-xl);
 }
