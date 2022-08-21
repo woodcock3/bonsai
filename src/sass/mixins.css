@@ -6,26 +6,26 @@
 
 @define-mixin svar-mq $prop, $var {
   [style*="$(var):"] {
-    $(prop): var($(var)) !important;
+    $(prop): var($(var)) !default;
   }
   &@media only screen and (min-width:640px) {
     [style*="$(var)-sm:"] {
-      $(prop): var($(var)-sm) !important;
+      $(prop): var($(var)-sm) !default;
     }
   }
   &@media only screen and (min-width:768px) {
     [style*="$(var)-md:"] {
-      $(prop): var($(var)-md) !important;
+      $(prop): var($(var)-md) !default;
     }
   }
   &@media only screen and (min-width:1024px) {
     [style*="$(var)-lg:"] {
-      $(prop): var($(var)-lg) !important;
+      $(prop): var($(var)-lg) !default;
     }
   }
   &@media only screen and (min-width:1280px) {
     [style*="$(var)-xl:"] {
-      $(prop): var($(var)-xl) !important;
+      $(prop): var($(var)-xl) !default;
     }
   }
 }
