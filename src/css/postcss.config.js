@@ -4,12 +4,17 @@ const postcssImport = require('postcss-import');
 const cssvariables = require("postcss-css-variables");
 const postcssInlineSvg = require('postcss-inline-svg');
 const postcssSimpleVars = require('postcss-simple-vars');
-const postcssNesting = require('postcss-nesting');
 const postcssMixins = require('postcss-mixins');
-const postcssCustomMedia = require('postcss-custom-media');
 const postcssCombineMediaQuery = require('postcss-combine-media-query');
 
-const autoprefixer = require('autoprefixer');
+const postcssPresets= require('postcss-preset-env')({
+  stage: 3,
+  features: {
+    "custom-media-queries": true,
+    "nesting-rules": true
+  }
+});
+
 const cssnanoConfig = {
     autoprefixer: false,
     discardComments: {removeAll: true},
@@ -28,13 +33,11 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
 
 module.exports = {
   plugins: [
-    autoprefixer,
     postcssImport,
+    postcssPresets,
     postcssInlineSvg, 
     postcssMixins, 
     postcssSimpleVars, 
-    postcssNesting,
-    postcssCustomMedia,
     postcssCombineMediaQuery,
     cssvariables,
     ...(process.env.NODE_ENV === "production" ? [cssnano, purgecss] : [])
