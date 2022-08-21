@@ -4,7 +4,7 @@
   grid-gap: var(--gap, 1rem);
 }
 
-@media only screen and (min-width:440px) {
+@media only screen and (--xs-viewport) {
   .grid[style*="--col-xs:"] {
     grid-template-columns: repeat(var(--col-xs, 1), 1fr);
   }
@@ -18,7 +18,7 @@
   }
 }
 
-@media only screen and (min-width:640px) {
+@media only screen and (--sm-viewport) {
   .grid[style*="--col-sm:"] {
     grid-template-columns: repeat(var(--col-sm, 1), 1fr);
   }
@@ -32,7 +32,7 @@
   }
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (--md-viewport) {
   .grid[style*="--col-md:"] {
     grid-template-columns: repeat(var(--col-md, 1), 1fr);
   }
@@ -46,7 +46,7 @@
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (--lg-viewport) {
   .grid[style*="--col-lg:"] {
     grid-template-columns: repeat(var(--col-lg, 1), 1fr);
   }
