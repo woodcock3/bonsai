@@ -5,19 +5,19 @@
 }
 
 @define-mixin svar-mq $prop $value {
-  $(prop): var($(value)) !default
-}
-@media only screen and (--sm-viewport) {
-  $(prop): var($(value)-sm) !default
-}
-@media only screen and (--md-viewport) {
-  $(prop): var($(value)-md) !default
-}
-@media only screen and (--lg-viewport) {
-  $(prop): var($(value)-lg) !default
-}
-@media only screen and (--xl-viewport) {
-  $(prop): var($(value)-xl) !default
+  $(prop): var($(value)) !default;
+
+  &@media only screen and (--sm-viewport) {
+  $(prop): var($(value)-sm) !default;
+
+  &@media only screen and (--md-viewport) {
+  $(prop): var($(value)-md) !default;
+
+  &@media only screen and (--lg-viewport) {
+  $(prop): var($(value)-lg) !default;
+
+  &@media only screen and (--xl-viewport) {
+  $(prop): var($(value)-xl) !default;
 }
 
 @define-mixin svar:hover $prop, $value {
