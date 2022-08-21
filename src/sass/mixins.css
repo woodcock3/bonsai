@@ -1,6 +1,6 @@
 @define-mixin svar $prop $value {
   [style*="$(value):"] {
-    $(prop): var($(value)) !default
+    $(prop): var($(value)) !default;
   }
 }
 
@@ -8,16 +8,16 @@
   $(prop): var($(value)) !default;
 
   &@media only screen and (--sm-viewport) {
-  $(prop): var($(value)-sm) !default;
+  $(prop): var($(value)-sm) !default;}
 
   &@media only screen and (--md-viewport) {
-  $(prop): var($(value)-md) !default;
+  $(prop): var($(value)-md) !default;}
 
   &@media only screen and (--lg-viewport) {
-  $(prop): var($(value)-lg) !default;
+  $(prop): var($(value)-lg) !default;}
 
   &@media only screen and (--xl-viewport) {
-  $(prop): var($(value)-xl) !default;
+  $(prop): var($(value)-xl) !default;}
 }
 
 @define-mixin svar:hover $prop, $value {
