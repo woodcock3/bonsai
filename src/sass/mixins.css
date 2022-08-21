@@ -1,37 +1,37 @@
-@custom-media --sm-viewport (min-width: 640px);
-@custom-media --md-viewport (min-width: 768px);
-@custom-media --lg-viewport (min-width: 1024px);
-/* --wrapper is in the variable.css and is also used in layout.css */
+@custom-media --sm-viewport (min-width: 640px !default);
+@custom-media --md-viewport (min-width: 768px !default);
+@custom-media --lg-viewport (min-width: 1024px !default);
+/* --wrapper is in the variable.css and is also used in _layout.css */
 @custom-media --xl-viewport (min-width: var(--wrapper));
 
 @define-mixin svar $prop, $var {
   [style*="$(var):"] {
-    $(prop): var($(var)) !important;
+    $(prop): var($(var)) !default;
   }
 }
 
 @define-mixin svar-mq $prop, $var {
   [style*="$(var):"] {
-    $(prop): var($(var)) !important;
+    $(prop): var($(var)) !default;
   }
   @media only screen and (--sm-viewport) {
     [style*="$(var)-sm:"] {
-      $(prop): var($(var)-sm) !important;
+      $(prop): var($(var)-sm) !default;
     }
   }
   @media only screen and (--md-viewport) {
     [style*="$(var)-md:"] {
-      $(prop): var($(var)-md) !important;
+      $(prop): var($(var)-md) !default;
     }
   }
   @media only screen and (--lg-viewport) {
     [style*="$(var)-lg:"] {
-      $(prop): var($(var)-lg) !important;
+      $(prop): var($(var)-lg) !default;
     }
   }
   @media only screen and (--xl-viewport) {
     [style*="$(var)-xl:"] {
-      $(prop): var($(var)-xl) !important;
+      $(prop): var($(var)-xl) !default;
     }
   }
 }
