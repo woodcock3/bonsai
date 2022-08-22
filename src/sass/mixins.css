@@ -1,10 +1,10 @@
-@define-mixin svar $prop $value {
+@mixin svar $prop $value {
   [style*="$(value):"] {
     $(prop): var($(value)) !default;
   }
 }
 
-@define-mixin svar-mq $prop, $var {
+@mixin svar-mq $prop, $var {
   [style*="$(var):"] {
     $(prop): var($(var)) !default;
   }
@@ -31,19 +31,19 @@
 }
 
 
-@define-mixin svar:hover $prop, $value {
+@mixin svar:hover $prop, $value {
   [style*="$(value):"]:hover {
     $(prop): var($(value), var(--$(prop)));
   }
 }
 
-@define-mixin svar:before $prop, $value {
+@mixin svar:before $prop, $value {
   [style*="$(value):"]::before {
     $(prop): var($(value), var(--$(prop)));
   }
 }
 
-@define-mixin svar:after $prop, $value {
+@mixin svar:after $prop, $value {
   [style*="$(value):"]::after {
     $(prop): var($(value), var(--$(prop)));
   }
