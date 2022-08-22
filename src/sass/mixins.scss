@@ -30,6 +30,30 @@
   }
 }
 
+// sassmiester
+@mixin svar-mq ($prop, $val) {
+  @media only screen and (min-width:640px) {
+    [style*="#{$val}-sm:"] {
+      $prop: var(($val)-sm) !default;
+    }
+  }
+  @media only screen and (min-width:768px) {
+    [style*="#{$val}-md:"] {
+      $prop: var(($val)-md) !default;
+    }
+  }
+  @media only screen and (min-width:1024px) {
+    [style*="#{$val}-lg:"] {
+      $prop: var(($val)-lg) !default;
+    }
+  }
+  @media only screen and (min-width:1280px) {
+    [style*="#{$val}-xl:"] {
+      $prop: var(($val)-xl) !default;
+    }
+  }
+}
+
 
 @mixin 'svar:hover' ($prop, $value) {
   [style*="#{$value}:"]:hover {
