@@ -8,22 +8,22 @@
   [style*="$(var):"] {
     $(prop): var($(var)) !default;
   }
-  &@media only screen and (min-width:640px) {
+  &@media only screen and (--sm-viewport) {
     [style*="$(var)-sm:"] {
       $(prop): var($(var)-sm) !default;
     }
   }
-  &@media only screen and (min-width:768px) {
+  &@media only screen and (--md-viewport) {
     [style*="$(var)-md:"] {
       $(prop): var($(var)-md) !default;
     }
   }
-  &@media only screen and (min-width:1024px) {
+  &@media only screen and (--lg-viewport) {
     [style*="$(var)-lg:"] {
       $(prop): var($(var)-lg) !default;
     }
   }
-  &@media only screen and (min-width:1280px) {
+  &@media only screen and (--xl-viewport) {
     [style*="$(var)-xl:"] {
       $(prop): var($(var)-xl) !default;
     }
