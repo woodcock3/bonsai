@@ -8,66 +8,41 @@
   [style*="#{$value}:"] {
     $prop: var($value) !default;
   }
-  @media only screen and (--sm-viewport) {
+  @media only screen and (min-width: var(--sm-viewport)) {
     [style*="#{$value}-sm:"] {
       $prop: var(($value)-sm) !default;
     }
   }
-  @media only screen and (--md-viewport) {
+  @media only screen and (min-width: var(--md-viewport)) {
     [style*="#{$value}-md:"] {
       $prop: var(($value)-md) !default;
     }
   }
-  @media only screen and (--lg-viewport) {
+  @media only screen and (min-width: var(--lg-viewport)) {
     [style*="#{$value}-lg:"] {
       $prop: var(($value)-lg) !default;
     }
   }
-  @media only screen and (--xl-viewport) {
+  @media only screen and (min-width: var(--xl-viewport)) {
     [style*="#{$value}-xl:"] {
       $prop: var(($value)-xl) !default;
     }
   }
 }
 
-// sassmiester
-@mixin svar-mq ($prop, $val) {
-  @media only screen and (min-width:640px) {
-    [style*="#{$val}-sm:"] {
-      $prop: var(($val)-sm) !default;
-    }
-  }
-  @media only screen and (min-width:768px) {
-    [style*="#{$val}-md:"] {
-      $prop: var(($val)-md) !default;
-    }
-  }
-  @media only screen and (min-width:1024px) {
-    [style*="#{$val}-lg:"] {
-      $prop: var(($val)-lg) !default;
-    }
-  }
-  @media only screen and (min-width:1280px) {
-    [style*="#{$val}-xl:"] {
-      $prop: var(($val)-xl) !default;
-    }
-  }
-}
-
-
-@mixin 'svar:hover' ($prop, $value) {
+@mixin svar-hover ($prop, $value) {
   [style*="#{$value}:"]:hover {
     $prop: var($value), var(--$prop);
   }
 }
 
-@mixin 'svar:before' ($prop, $value) {
+@mixin svar-before ($prop, $value) {
   [style*="#{$value}:"]::before {
     $prop: var($value), var(--$prop);
   }
 }
 
-@mixin 'svar:after' ($prop, $value) {
+@mixin svar-after ($prop, $value) {
   [style*="#{$value}:"]::after {
     $prop: var($value), var(--$prop);
   }
