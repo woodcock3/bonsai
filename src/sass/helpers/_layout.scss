@@ -1,15 +1,15 @@
 /* Layout Helpers */
 
-@media (--sm-viewport) {
+@media (min-width: --sm-viewport) {
   --gutter: var(--gutter-sm);
 }
-@media (--md-viewport) {
+@media (min-width: --md-viewport) {
   --gutter: var(--gutter-md);
 }
-@media (--lg-viewport) {
+@media (min-width: --lg-viewport) {
   --gutter: var(--gutter-lg);
   }
-@media (--xl-viewport) {
+@media (min-width: --xl-viewport) {
   --gutter: var(--gutter-xl);
 }
 
