@@ -30,9 +30,9 @@ module.exports = function (eleventyConfig) {
   // Copy favicon to route of /_site
   eleventyConfig.addPassthroughCopy({"./logo.png": "./assets/logo.png"});
 
-  // Watch the tailwind css files
+  // Watch the sass files
   eleventyConfig.addWatchTarget('./src/sass/postcss.config.js');
-  eleventyConfig.addWatchTarget('./src/sass/bonsai.scss');
+  eleventyConfig.addWatchTarget('./src/sass/style.scss');
 
   eleventyConfig.addPassthroughCopy({ './_tmp/style.css': './assets/css/style.css' });
 
