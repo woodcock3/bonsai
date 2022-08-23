@@ -31,8 +31,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({"./logo.png": "./assets/logo.png"});
 
   // Watch the tailwind css files
-  eleventyConfig.addWatchTarget('./src/css/postcss.config.js');
-  eleventyConfig.addWatchTarget('./src/css/bonsai.css');
+  eleventyConfig.addWatchTarget('./src/sass/postcss.config.js');
+  eleventyConfig.addWatchTarget('./src/sass/bonsai.css');
 
   eleventyConfig.addPassthroughCopy({ './_tmp/style.css': './assets/css/style.css' });
 
