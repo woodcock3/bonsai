@@ -1,4 +1,6 @@
 /* Background */
+@use './mixins.scss';
+
 @include svar-mq(background, --bg0);
 @include svar-mq(background-attachment, --bga);
 @include svar-mq(background-color, --bgc);
