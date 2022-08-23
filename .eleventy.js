@@ -32,7 +32,7 @@ module.exports = function (eleventyConfig) {
 
   // Watch the tailwind css files
   eleventyConfig.addWatchTarget('./src/sass/postcss.config.js');
-  eleventyConfig.addWatchTarget('./src/sass/bonsai.css');
+  eleventyConfig.addWatchTarget('./src/sass/bonsai.scss');
 
   eleventyConfig.addPassthroughCopy({ './_tmp/style.css': './assets/css/style.css' });
 
