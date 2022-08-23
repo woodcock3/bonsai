@@ -1,5 +1,5 @@
 /* Flex */
-@use 'variables.scss';
+@use '../variables.scss';
 @use '../mixins.scss';
 
 @include svar-mq (flex, --fx);
