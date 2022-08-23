@@ -13,7 +13,7 @@ const cssnano = require('cssnano')({
 const purgecss = require('@fullhuman/postcss-purgecss')({
   content: ['./**/*.html'],
   defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
-  css: ['bonsai.css'],
+  css: ['style.css'],
   safelist: {}
 });
 
