@@ -1,3 +1,12 @@
+$breakpoints: (
+  mobile: 37.5em,
+  tablet: 50em,
+  desktop: 62.5em,
+  widescreen: 75em,
+) !default;
+
+
+
 :root {
   --white: #fff;
   --grey: #e6e6e6;
