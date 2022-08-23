@@ -1,5 +1,4 @@
 /* Background */
-@use '../variables.scss';
 @use '../mixins.scss' as m;
 
 @include m.svar-mq(background, --bg0);
