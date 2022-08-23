@@ -12,49 +12,49 @@
  * Configuration
  * =========================== */
 
-@import 'variables.scss';
-@import 'mixins.scss';
+@use 'variables.scss';
+@use 'mixins.scss';
 
 /* ===========================
  * Base
  * =========================== */
 
-@import 'base/_body.scss';
-@import 'base/_code.scss';
-@import 'base/_forms.scss';
-@import 'base/_groups.scss';
-@import 'base/_grid-layout.scss';
-@import 'base/_misc.scss';
-@import 'base/_table.scss';
-@import 'base/_typography.scss';
-@import 'base/_utilities.scss';
+@use 'base/_body.scss';
+@use 'base/_code.scss';
+@use 'base/_forms.scss';
+@use 'base/_groups.scss';
+@use 'base/_grid-layout.scss';
+@use 'base/_misc.scss';
+@use 'base/_table.scss';
+@use 'base/_typography.scss';
+@use 'base/_utilities.scss';
 
 /* ===========================
  * Utilities 
  * =========================== */
 
-@import 'utilities/_background.scss';
-@import 'utilities/_border.scss';
-/* @import 'utilities/_flex.css';
- * @import 'utilities/_grid.css';
- * @import 'utilities/_interact.css';
- * @import 'utilities/_layout.css';
- * @import 'utilities/_overflow.css';
- * @import 'utilities/_sizing.css';
- * @import 'utilities/_spacing.css';
- * @import 'utilities/_typography.css';
- * @import 'utilities/_transform.css';
- * @import 'utilities/_transition.css';
- * @import 'utilities/_misc.css'; */
+@use 'utilities/_background.scss';
+@use 'utilities/_border.scss';
+/* @use 'utilities/_flex.css';
+ * @use 'utilities/_grid.css';
+ * @use 'utilities/_interact.css';
+ * @use 'utilities/_layout.css';
+ * @use 'utilities/_overflow.css';
+ * @use 'utilities/_sizing.css';
+ * @use 'utilities/_spacing.css';
+ * @use 'utilities/_typography.css';
+ * @use 'utilities/_transform.css';
+ * @use 'utilities/_transition.css';
+ * @use 'utilities/_misc.css'; */
 
 /* ===========================
  * Helpers
  * =========================== */
 
-@import 'helpers/_background.scss';
-@import 'helpers/_layout.scss';
-@import 'helpers/_position.scss';
-@import 'helpers/_shadows.scss';
-@import 'helpers/_spacing.scss';
-@import 'helpers/_transform.scss';
-@import 'helpers/_typography.scss';
+@use 'helpers/_background.scss';
+@use 'helpers/_layout.scss';
+@use 'helpers/_position.scss';
+@use 'helpers/_shadows.scss';
+@use 'helpers/_spacing.scss';
+@use 'helpers/_transform.scss';
+@use 'helpers/_typography.scss';
