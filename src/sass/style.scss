@@ -12,29 +12,29 @@
  * Configuration
  * =========================== */
 
-@import 'variables.css';
+@import 'variables.scss';
 @import 'mixins.scss';
 
 /* ===========================
  * Base
  * =========================== */
 
-@import 'base/_body.css';
-@import 'base/_code.css';
-@import 'base/_forms.css';
-@import 'base/_groups.css';
-@import 'base/_grid-layout.css';
-@import 'base/_misc.css';
-@import 'base/_table.css';
-@import 'base/_typography.css';
-@import 'base/_utilities.css';
+@import 'base/_body.scss';
+@import 'base/_code.scss';
+@import 'base/_forms.scss';
+@import 'base/_groups.scss';
+@import 'base/_grid-layout.scss';
+@import 'base/_misc.scss';
+@import 'base/_table.scss';
+@import 'base/_typography.scss';
+@import 'base/_utilities.scss';
 
 /* ===========================
  * Utilities 
  * =========================== */
 
-@import 'utilities/_background.css';
-@import 'utilities/_border.css';
+@import 'utilities/_background.scss';
+@import 'utilities/_border.scss';
 /* @import 'utilities/_flex.css';
  * @import 'utilities/_grid.css';
  * @import 'utilities/_interact.css';
@@ -51,10 +51,10 @@
  * Helpers
  * =========================== */
 
-@import 'helpers/_background.css';
-@import 'helpers/_layout.css';
-@import 'helpers/_position.css';
-@import 'helpers/_shadows.css';
-@import 'helpers/_spacing.css';
-@import 'helpers/_transform.css';
-@import 'helpers/_typography.css';
+@import 'helpers/_background.scss';
+@import 'helpers/_layout.scss';
+@import 'helpers/_position.scss';
+@import 'helpers/_shadows.scss';
+@import 'helpers/_spacing.scss';
+@import 'helpers/_transform.scss';
+@import 'helpers/_typography.scss';
