@@ -1,4 +1,7 @@
 /* Border */
+@use 'variables.scss';
+@use '../mixins.scss';
+
 @include svar-mq (border, --b);
 @include svar-mq (border-color, --bc);
 @include svar-mq (border-style, --bs);
