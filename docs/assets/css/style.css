@@ -1,25 +1,51 @@
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}
-
-html {
-  font-family: -apple-system, BlinkMacSystemFont, Avenir, "Avenir Next", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-size: 15px;
-  line-height: 1.6;
-  font-weight: 400;
-
-  color: var(--text-main);
-  background: var(--background);
-
-  -webkit-text-size-adjust: 100%;
-
-          text-size-adjust: 100%;
-  text-rendering: optimizeLegibility;
-}
-
-body {
-  margin: 0;
-  font-size: 1em;
-}
+/*! 
+ * City-Jekyll | MIT License
+ *
+ * Author: Woodcock3
+ * Source: https://github.com/woodcock3/bonsai
+ * Documentation: https://woodcock3.github.io/bonsai/docs/
+ *
+ * Credit: Bonsai CSS | https://github.com/bonsaicss/bonsai.css
+ */
+/* ===========================
+ * Configuration
+ * =========================== */
+@import 'variables.css';
+/* ===========================
+ * Base
+ * =========================== */
+@import 'base/_body.css';
+@import 'base/_code.css';
+@import 'base/_forms.css';
+@import 'base/_groups.css';
+@import 'base/_grid-layout.css';
+@import 'base/_misc.css';
+@import 'base/_table.css';
+@import 'base/_typography.css';
+@import 'base/_utilities.css';
+/* ===========================
+ * Utilities 
+ * =========================== */
+@import 'utilities/_background.css';
+@import 'utilities/_border.css';
+/* @import 'utilities/_flex.css';
+ * @import 'utilities/_grid.css';
+ * @import 'utilities/_interact.css';
+ * @import 'utilities/_layout.css';
+ * @import 'utilities/_overflow.css';
+ * @import 'utilities/_sizing.css';
+ * @import 'utilities/_spacing.css';
+ * @import 'utilities/_typography.css';
+ * @import 'utilities/_transform.css';
+ * @import 'utilities/_transition.css';
+ * @import 'utilities/_misc.css'; */
+/* ===========================
+ * Helpers
+ * =========================== */
+@import 'helpers/_background.css';
+@import 'helpers/_layout.css';
+@import 'helpers/_position.css';
+@import 'helpers/_shadows.css';
+@import 'helpers/_spacing.css';
+@import 'helpers/_transform.css';
+@import 'helpers/_typography.css';
