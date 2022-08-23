@@ -1,17 +1,17 @@
 /* Background */
 @use '../variables.scss';
-@use '../mixins.scss';
+@use '../mixins.scss' as m;
 
-@include svar-mq(background, --bg0);
-@include svar-mq(background-attachment, --bga);
-@include svar-mq(background-color, --bgc);
-@include svar-mq(background-image, --bgi);
-@include svar-mq(background-position, --bgp);
-@include svar-mq(background-repeat, --bgr);
-@include svar-mq(background-size, --bgs);
+@include m.svar-mq(background, --bg0);
+@include m.svar-mq(background-attachment, --bga);
+@include m.svar-mq(background-color, --bgc);
+@include m.svar-mq(background-image, --bgi);
+@include m.svar-mq(background-position, --bgp);
+@include m.svar-mq(background-repeat, --bgr);
+@include m.svar-mq(background-size, --bgs);
 
-@include svar-hover(background, --hvr-bg);
-@include svar-hover(background-color, --hvr-bgc);
+@include m.svar-hover(background, --hvr-bg);
+@include m.svar-hover(background-color, --hvr-bgc);
 
 [style*="--grad-top:"] {
     background-image: linear-gradient(0deg, transparent, var(--grad-bottom));
