@@ -1,21 +1,20 @@
 /* Border */
-@use '../variables.scss';
-@use '../mixins.scss';
+@use '../mixins.scss' as m;
 
-@include svar-mq (border, --b);
-@include svar-mq (border-color, --bc);
-@include svar-mq (border-style, --bs);
-@include svar-mq (border-width, --bw);
-@include svar-mq (border-radius, --br);
-@include svar-mq (border-radius, --radius);
-@include svar-mq (border-top, --bt);
-@include svar-mq (border-left,  --bl);
-@include svar-mq (border-right, --br);
-@include svar-mq (border-bottom, --bb);
-@include svar-mq (border-top-left-radius, --btlr);
-@include svar-mq (border-top-right-radius, --btrr);
-@include svar-mq (border-bottom-left-radius, --bblr);
-@include svar-mq (border-bottom-right-radius, --bbrr);
+@include m.svar-mq (border, --b);
+@include m.svar-mq (border-color, --bc);
+@include m.svar-mq (border-style, --bs);
+@include m.svar-mq (border-width, --bw);
+@include m.svar-mq (border-radius, --br);
+@include m.svar-mq (border-radius, --radius);
+@include m.svar-mq (border-top, --bt);
+@include m.svar-mq (border-left,  --bl);
+@include m.svar-mq (border-right, --br);
+@include m.svar-mq (border-bottom, --bb);
+@include m.svar-mq (border-top-left-radius, --btlr);
+@include m.svar-mq (border-top-right-radius, --btrr);
+@include m.svar-mq (border-bottom-left-radius, --bblr);
+@include m.svar-mq (border-bottom-right-radius, --bbrr);
 
-@include svar-hover (border, --hvr-b);
-@include svar-hover (border-color, --hvr-bc);
+@include m.svar-hover (border, --hvr-b);
+@include m.svar-hover (border-color, --hvr-bc);
