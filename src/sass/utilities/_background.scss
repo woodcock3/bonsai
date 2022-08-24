@@ -1,7 +1,7 @@
 /* Background */
 @use '../mixins.scss' as m;
 
-@include m.svar-mq(background, --bg0);
+@include m.svar-mq(background, --bg);
 @include m.svar-mq(background-attachment, --bga);
 @include m.svar-mq(background-color, --bgc);
 @include m.svar-mq(background-image, --bgi);
