@@ -4,7 +4,7 @@
   grid-gap: var(--gap, 1rem);
 }
 
-@media only screen and (min-width: $mobile) {
+@media only screen and (min-width: #{$mobile}) {
   .grid[style*="--col-xs:"] {
     grid-template-columns: repeat(var(--col-xs, 1), 1fr);
   }
@@ -18,7 +18,7 @@
   }
 }
 
-@media only screen and (min-width: $tablet) {
+@media only screen and (min-width: #{$tablet}) {
   .grid[style*="--col-sm:"] {
     grid-template-columns: repeat(var(--col-sm, 1), 1fr);
   }
@@ -32,7 +32,7 @@
   }
 }
 
-@media only screen and (min-width: $desktop) {
+@media only screen and (min-width: #{$desktop}) {
   .grid[style*="--col-md:"] {
     grid-template-columns: repeat(var(--col-md, 1), 1fr);
   }
@@ -46,7 +46,7 @@
   }
 }
 
-@media only screen and (min-width: $wide) {
+@media only screen and (min-width: #{$wide}) {
   .grid[style*="--col-lg:"] {
     grid-template-columns: repeat(var(--col-lg, 1), 1fr);
   }
