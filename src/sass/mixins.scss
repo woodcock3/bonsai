@@ -1,31 +1,31 @@
 @mixin svar($prop, $value) {
   [style*="#{$value}:"] {
-    #{$prop}: var($value) !default;
+    #{$prop}: var($value);
   }
 }
 
 @mixin svar-mq($prop, $value) {
   [style*="#{$value}:"] {
-    #{$prop}: var($value) !default;
+    #{$prop}: var($value);
   }
   @media only screen and (min-width: var(--small)) {
     [style*="#{$value}-sm:"] {
-      #{$prop}: var(($value)-sm) !default;
+      #{$prop}: var(($value)-sm);
     }
   }
   @media only screen and (min-width: var(--medium)) {
     [style*="#{$value}-md:"] {
-      #{$prop}: var(($value)-md) !default;
+      #{$prop}: var(($value)-md);
     }
   }
   @media only screen and (min-width: var(--large)) {
     [style*="#{$value}-lg:"] {
-      #{$prop}: var(($value)-lg) !default;
+      #{$prop}: var(($value)-lg);
     }
   }
   @media only screen and (min-width: var(--xlarge)) {
     [style*="#{$value}-xl:"] {
-      #{$prop}: var(($value)-xl) !default;
+      #{$prop}: var(($value)-xl);
     }
   }
 }
