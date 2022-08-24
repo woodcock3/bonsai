@@ -1,0 +1,5 @@
+@use '../mixins.scss' as m;
+
+@include m.svar (overflow, --of);
+@include m.svar (overflow-x, --ofx);
+@include m.svar (overflow-y, --ofy);
