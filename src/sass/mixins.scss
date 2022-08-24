@@ -32,18 +32,18 @@
 
 @mixin svar-hover($prop, $value) {
   [style*="#{$value}:"]:hover {
-    #{$prop}: var($value), var(--$prop);
+    #{$prop}: var($value), var(--#{$prop});
   }
 }
 
 @mixin svar-before($prop, $value) {
   [style*="#{$value}:"]::before {
-    #{$prop}: var($value), var(--$prop);
+    #{$prop}: var($value), var(--#{$prop});
   }
 }
 
 @mixin svar-after($prop, $value) {
   [style*="#{$value}:"]::after {
-    #{$prop}: var($value), var(--$prop);
+    #{$prop}: var($value), var(--#{$prop});
   }
 }
