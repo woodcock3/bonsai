@@ -867,11 +867,11 @@ mark {
   }
 }
 [style*="--hvr-bg:"]:hover {
-  background: var(--hvr-bg), var(-- background);
+  background: var(--hvr-bg), var(--background);
 }
 
 [style*="--hvr-bgc:"]:hover {
-  background-color: var(--hvr-bgc), var(-- background-color);
+  background-color: var(--hvr-bgc), var(--background-color);
 }
 
 [style*="--grad-top:"] {
@@ -1220,11 +1220,11 @@ mark {
   }
 }
 [style*="--hvr-b:"]:hover {
-  border: var(--hvr-b), var(-- border);
+  border: var(--hvr-b), var(--border);
 }
 
 [style*="--hvr-bc:"]:hover {
-  border-color: var(--hvr-bc), var(-- border-color);
+  border-color: var(--hvr-bc), var(--border-color);
 }
 
 /* Flex */
@@ -1760,7 +1760,7 @@ mark {
 }
 
 [style*="--cur:"]:hover {
-  cursor: var(--cur), var(-- cursor);
+  cursor: var(--cur), var(--cursor);
 }
 
 /* Layout */
@@ -2795,7 +2795,7 @@ mark {
   }
 }
 [style*="--hvr-c:"]:hover {
-  color: var(--hvr-c), var(-- color);
+  color: var(--hvr-c), var(--color);
 }
 
 [style*="--bi:"] {
