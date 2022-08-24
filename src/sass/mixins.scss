@@ -1,49 +1,49 @@
 @mixin svar($prop, $value) {
-  [style*="#{$value}:"] {
+  .#{$value}, [style*="#{$value}:"] {
     #{$prop}: var($value);
   }
 }
 
 @mixin svar-mq($prop, $value) {
-  [style*="#{$value}:"] {
+  .#{$value}, [style*="#{$value}:"] {
     #{$prop}: var($value);
   }
   @media only screen and (min-width: var(--small)) {
-    [style*="#{$value}-sm:"] {
+    .#{$value}, [style*="#{$value}-sm:"] {
       #{$prop}: var(($value)-sm);
     }
   }
   @media only screen and (min-width: var(--medium)) {
-    [style*="#{$value}-md:"] {
+    .#{$value}, [style*="#{$value}-md:"] {
       #{$prop}: var(($value)-md);
     }
   }
   @media only screen and (min-width: var(--large)) {
-    [style*="#{$value}-lg:"] {
+    .#{$value}, [style*="#{$value}-lg:"] {
       #{$prop}: var(($value)-lg);
     }
   }
   @media only screen and (min-width: var(--xlarge)) {
-    [style*="#{$value}-xl:"] {
+    .#{$value}, [style*="#{$value}-xl:"] {
       #{$prop}: var(($value)-xl);
     }
   }
 }
 
 @mixin svar-hover($prop, $value) {
-  [style*="#{$value}:"]:hover {
+  .#{$value}, [style*="#{$value}:"]:hover {
     #{$prop}: var($value), var(--#{$prop});
   }
 }
 
 @mixin svar-before($prop, $value) {
-  [style*="#{$value}:"]::before {
+  .#{$value}, [style*="#{$value}:"]::before {
     #{$prop}: var($value), var(--#{$prop});
   }
 }
 
 @mixin svar-after($prop, $value) {
-  [style*="#{$value}:"]::after {
+  .#{$value}, [style*="#{$value}:"]::after {
     #{$prop}: var($value), var(--#{$prop});
   }
 }
