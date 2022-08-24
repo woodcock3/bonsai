@@ -1,4 +1,5 @@
 /* Breakpoints */
+$warch: 25em !default;
 $mobile: 37.5em !default;
 $tablet: 50em !default;
 $desktop: 62.5em !default;
@@ -48,6 +49,7 @@ $wide: 75em !default;
   --gutter-xl: calc(var(--gutter)*2);
   
   --wrapper: var(#{$wide});
+  --tiny: var(#{$watch});
   --small: var(#{$mobile});
   --medium: var(#{$tablet});
   --large: var(#{$desktop});
