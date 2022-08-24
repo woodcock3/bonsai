@@ -1,14 +1,16 @@
 /* Grid */
-@mixin svar-mq grid-template-columns --gtc;
-@mixin svar-mq grid-template-rows --gtr;
-@mixin svar-mq grid-auto-columns --gac;
-@mixin svar-mq grid-auto-rows --gar;
-@mixin svar-mq grid-column --gc;
-@mixin svar-mq grid-row --gr;
-@mixin svar-mq grid-gap --gg;
-@mixin svar-mq place-self --ps;
-@mixin svar-mq justify-items --ji;
-@mixin svar-mq justify-self --js;
+@use '../mixins.scss' as m;
+
+@include m.svar-mq (grid-template-columns, --gtc);
+@include m.svar-mq (grid-template-rows, --gtr);
+@include m.svar-mq (grid-auto-columns, --gac);
+@include m.svar-mq (grid-auto-rows, --gar0;
+@include m.svar-mq (grid-column, --gc);
+@include m.svar-mq (grid-row, --gr);
+@include m.svar-mq (grid-gap, --gg);
+@include m.svar-mq (place-self, --ps);
+@include m.svar-mq (justify-items, --ji);
+@include m.svar-mq (justify-self, --js);
 
 [style*="--grid-cols:"] {
     grid-template-columns: repeat(var(--grid-cols), minmax(0, 1fr));
