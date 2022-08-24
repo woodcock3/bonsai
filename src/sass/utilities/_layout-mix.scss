@@ -1,0 +1,14 @@
+/* Layout */
+@use '../mixins.scss' as m;
+
+@include m.svar-mq (display, --d);
+@include m.svar-mq (float, --ft);
+@include m.svar-mq (position, --pos);
+@include m.svar-mq (top, --top);
+@include m.svar-mq (left, --left);
+@include m.svar-mq (right, --right);
+@include m.svar-mq (bottom, --bottom);
+@include m.svar-mq (object-fit, --objf);
+@include m.svar-mq (object-position, --objp);
+@include m.svar-mq (visibility, --v);
+@include m.svar-mq (z-index, --z);
