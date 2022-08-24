@@ -6,10 +6,10 @@ $breakpoints: (
 ) !default;
 
 /* Breakpoints */
-$mobile: 37.5em !global; // 600px
-$tablet: 50em !global;  // 800px
-$desktop: 62.5em !global; // 1000px
-$wide: 75em !global;  // 1200px
+$mobile: 37.5em !default;
+$tablet: 50em !default;
+$desktop: 62.5em !default;
+$wide: 75em !default;
 
 :root {
   --white: #fff;
