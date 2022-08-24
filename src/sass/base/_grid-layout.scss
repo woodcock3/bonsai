@@ -1,3 +1,8 @@
+$mobile: 37.5em !default; // 600px
+$tablet: 50em !default;  // 800px
+$desktop: 62.5em !default; // 1000px
+$wide: 75em !default;  // 1200px
+
 .grid {
   display: grid;
   grid-template-columns: repeat(var(--col, 1), 1fr);
