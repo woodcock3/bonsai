@@ -654,8 +654,8 @@ mark {
 }
 
 /* Background */
-.--bg0, [style*="--bg0:"] {
-  background: var(--bg0);
+.--bg, [style*="--bg:"] {
+  background: var(--bg);
 }
 .--bga, [style*="--bga:"] {
   background-attachment: var(--bga);
@@ -1300,8 +1300,8 @@ mark {
   .grid > [style*="--sr-sm:"] {
     grid-row: span var(--sr-sm, 1);
   }
-  .--bg0, [style*="--bg0-sm:"] {
-    background: var(--bg0-sm);
+  .--bg, [style*="--bg-sm:"] {
+    background: var(--bg-sm);
   }
   .--bga, [style*="--bga-sm:"] {
     background-attachment: var(--bga-sm);
@@ -1599,8 +1599,8 @@ mark {
   .grid > [style*="--sr-md:"] {
     grid-row: span var(--sr-md, 1);
   }
-  .--bg0, [style*="--bg0-md:"] {
-    background: var(--bg0-md);
+  .--bg, [style*="--bg-md:"] {
+    background: var(--bg-md);
   }
   .--bga, [style*="--bga-md:"] {
     background-attachment: var(--bga-md);
@@ -1898,8 +1898,8 @@ mark {
   .grid > [style*="--sr-lg:"] {
     grid-row: span var(--sr-lg, 1);
   }
-  .--bg0, [style*="--bg0-lg:"] {
-    background: var(--bg0-lg);
+  .--bg, [style*="--bg-lg:"] {
+    background: var(--bg-lg);
   }
   .--bga, [style*="--bga-lg:"] {
     background-attachment: var(--bga-lg);
@@ -2188,8 +2188,8 @@ mark {
   }
 }
 @media only screen and (min-width: var(--xlarge)){
-  .--bg0, [style*="--bg0-xl:"] {
-    background: var(--bg0-xl);
+  .--bg, [style*="--bg-xl:"] {
+    background: var(--bg-xl);
   }
   .--bga, [style*="--bga-xl:"] {
     background-attachment: var(--bga-xl);
