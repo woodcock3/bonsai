@@ -1,0 +1,15 @@
+/* Spacing */
+@use '../mixins.scss' as m;
+
+@include m.svar (box-sizing, --bxs);
+@include m.svar-mq (padding, --p);
+@include m.svar-mq (padding-left, --pl);
+@include m.svar-mq (padding-right, --pr_;
+@include m.svar-mq (padding-top, --pt);
+@include m.svar-mq (padding-bottom, --pb);
+@include m.svar-mq (margin, --m);
+@include m.svar-mq (margin-left, --ml);
+@include m.svar-mq (margin-right, --mr);
+@include m.svar-mq (margin-top, --mt);
+@include m.svar-mq (margin-bottom, --mb);
+
