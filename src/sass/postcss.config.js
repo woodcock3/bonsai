@@ -1,6 +1,8 @@
 // postcss.config.js
 
 const autoprefixer = require('autoprefixer');
+const postcssCombineMediaQuery = require('postcss-combine-media-query');
+
 const cssnanoConfig = {
     autoprefixer: false,
     discardComments: {removeAll: true},
@@ -20,6 +22,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
 module.exports = {
   plugins: [
     autoprefixer,
+    postcssCombineMediaQuery,
     ...(process.env.NODE_ENV === "production" ? [cssnano, purgecss] : [])
   ],
 };
