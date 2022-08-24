@@ -1,15 +1,10 @@
-$mobile: 37.5em !default; // 600px
-$tablet: 50em !default;  // 800px
-$desktop: 62.5em !default; // 1000px
-$wide: 75em !default;  // 1200px
-
 .grid {
   display: grid;
   grid-template-columns: repeat(var(--col, 1), 1fr);
   grid-gap: var(--gap, 1rem);
 }
 
-@media only screen and (min-width: var(--small)) {
+@media only screen and (min-width: var(--xsmall)) {
   .grid[style*="--col-xs:"] {
     grid-template-columns: repeat(var(--col-xs, 1), 1fr);
   }
@@ -23,7 +18,7 @@ $wide: 75em !default;  // 1200px
   }
 }
 
-@media only screen and (min-width: var(--medium)) {
+@media only screen and (min-width: var(--small)) {
   .grid[style*="--col-sm:"] {
     grid-template-columns: repeat(var(--col-sm, 1), 1fr);
   }
@@ -37,7 +32,7 @@ $wide: 75em !default;  // 1200px
   }
 }
 
-@media only screen and (min-width: var(--large)) {
+@media only screen and (min-width: var(--medium)) {
   .grid[style*="--col-md:"] {
     grid-template-columns: repeat(var(--col-md, 1), 1fr);
   }
@@ -51,7 +46,7 @@ $wide: 75em !default;  // 1200px
   }
 }
 
-@media only screen and (min-width: var(--xlarge)) {
+@media only screen and (min-width: var(--large)) {
   .grid[style*="--col-lg:"] {
     grid-template-columns: repeat(var(--col-lg, 1), 1fr);
   }
