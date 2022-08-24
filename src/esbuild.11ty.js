@@ -15,7 +15,7 @@ module.exports = class {
       entryPoints: glob.sync(['assets/js/*.js']),
       bundle: true,
       minify: isProd,
-      outdir: './dist/assets/js',
+      outdir: './docs/assets/js',
       sourcemap: !isProd,
       target: isProd ? 'es6' : 'esnext'
     })
