@@ -1,0 +1,36 @@
+/* Typography */
+@use '../mixins.scss' as m;
+
+@include m.svar-mq (color, --c);
+@include m.svar (font-family, --ff);
+@include m.svar-mq (font-size, --size);
+@include m.svar (font-style, --fs);
+@include m.svar (font-weight, --weight);
+@include m.svar-mq (letter-spacing, --ls);
+@include m.svar-mq (line-height, --lh);
+@include m.svar (list-style, --lis);
+@include m.svar (list-style-type, --list);
+@include m.svar (list-style-position, --lisp);
+@include m.svar-mq (text-align, --ta);
+@include m.svar (text-decoration, --td);
+@include m.svar (text-shadow, --ts);
+@include m.svar (text-transform, --tt);
+@include m.svar-mq (writing-mode, --wm);
+@include m.svar (vertical-align, --va);
+
+@include m.svar-mq (white-space, --ws);
+@include m.svar-mq (word-break, --wb);
+
+@include m.svar-mq (column-count, --cc);
+@include m.svar-mq (column-gap, --cg);
+@include m.svar-mq (column-rule, --cr);
+@include m.svar-mq (column-span, --cs);
+
+@include m.svar-mq (direction, --dir);
+
+@include m.svar-hover (color, --hvr-c);
+
+[style*="--bi:"] {
+    page-break-inside: var(--bi);
+    break-inside: var(--bi);
+}
