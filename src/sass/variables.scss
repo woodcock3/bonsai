@@ -41,14 +41,17 @@ $wide: 75em !default;
   --typo-size-5: 1.2rem;
   --typo-size-6: 1rem;
 
-  --wrapper: 1280px !default;
   --gutter: 0.5rem;
   --gutter-sm: calc(var(--gutter)*2);
   --gutter-md: calc(var(--gutter)*2);
   --gutter-lg: calc(var(--gutter)*2);
   --gutter-xl: calc(var(--gutter)*2);
   
-  --xl-viewport: var(--wrapper);
+  --wrapper: var(#{$wide});
+  --small: var(#{$mobile});
+  --medium: var(#{$tablet});
+  --large: var(#{$desktop});
+  --xlarge: var(--wrapper);
 
   --transition: all ease .4s;
 
