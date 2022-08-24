@@ -1,0 +1,8 @@
+/* Animation */
+@use '../mixins.scss' as m;
+
+@include m.svar-mq (transition, --tn);
+@include m.svar-mq (transition-delay, --td);
+@include m.svar-mq (transition-duration, --tdn);
+@include m.svar-mq (transition-property, --tp);
+@include m.svar-mq (transition-timing-function, --ttf);
