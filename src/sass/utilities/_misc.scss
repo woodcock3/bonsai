@@ -1,0 +1,11 @@
+/* Misc */
+@use '../mixins.scss' as m;
+
+@include m.svar (all, --all);
+@include m.svar-mq (box-shadow, --boxs);
+@include m.svar-mq (content, --ct);
+@include m.svar-mq (opacity, --op);
+@include m.svar-mq (box-shadow, --bs);
+@include m.svar (clear, --cr);
+@include m.svar (content, --ct);
+@include m.svar (filter, --fr);
