@@ -1,0 +1,9 @@
+/* Interact */
+@use '../mixins.scss' as m;
+
+@include m.svar (user-select, --us);
+@include m.svar (outline, --oe);
+@include m.svar (pointer-events, --pe);
+@include m.svar (scroll-behavior, --sb);
+@include m.svar (cursor, --cur);
+@include m.svar-hover (cursor, --cur);
