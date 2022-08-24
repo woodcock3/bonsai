@@ -5,7 +5,11 @@ $breakpoints: (
   widescreen: 75em,
 ) !default;
 
-
+/* Breakpoints */
+$mobile: 37.5em !default;
+$tablet: 50em !default;
+$desktop: 62.5em !default;
+$wide: 75em !default;
 
 :root {
   --white: #fff;
@@ -50,12 +54,7 @@ $breakpoints: (
   --gutter-md: calc(var(--gutter)*2);
   --gutter-lg: calc(var(--gutter)*2);
   --gutter-xl: calc(var(--gutter)*2);
-    
-
-  --xs-viewport: 440px !default;
-  --sm-viewport: 640px !default;
-  --md-viewport: 768px !default;
-  --lg-viewport: 1024px !default;
+  
   --xl-viewport: var(--wrapper);
 
   --transition: all ease .4s;
