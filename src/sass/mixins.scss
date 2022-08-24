@@ -9,41 +9,41 @@
     #{$prop}: var(#{$value});
   }
   @media only screen and (min-width: var(--small)) {
-    .#{$value}, [style*="#{$value}-sm:"] {
+    .#{$value}-sm, [style*="#{$value}-sm:"] {
       #{$prop}: var(#{$value}-sm);
     }
   }
   @media only screen and (min-width: var(--medium)) {
-    .#{$value}, [style*="#{$value}-md:"] {
+    .#{$value}-md, [style*="#{$value}-md:"] {
       #{$prop}: var(#{$value}-md);
     }
   }
   @media only screen and (min-width: var(--large)) {
-    .#{$value}, [style*="#{$value}-lg:"] {
+    .#{$value}-lg, [style*="#{$value}-lg:"] {
       #{$prop}: var(#{$value}-lg);
     }
   }
   @media only screen and (min-width: var(--xlarge)) {
-    .#{$value}, [style*="#{$value}-xl:"] {
+    .#{$value}-xl, [style*="#{$value}-xl:"] {
       #{$prop}: var(#{$value}-xl);
     }
   }
 }
 
 @mixin svar-hover($prop, $value) {
-  .#{$value}, [style*="#{$value}:"]:hover {
+  .#{$value}:hover, [style*="#{$value}:"]:hover {
     #{$prop}: var(#{$value}), var(--#{$prop});
   }
 }
 
 @mixin svar-before($prop, $value) {
-  .#{$value}, [style*="#{$value}:"]::before {
+  .#{$value}::before, [style*="#{$value}:"]::before {
     #{$prop}: var(#{$value}), var(--#{$prop});
   }
 }
 
 @mixin svar-after($prop, $value) {
-  .#{$value}, [style*="#{$value}:"]::after {
+  .#{$value}::after, [style*="#{$value}:"]::after {
     #{$prop}: var(#{$value}), var(--#{$prop});
   }
 }
