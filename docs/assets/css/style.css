@@ -1278,7 +1278,7 @@ mark {
 /* ===========================
  * Helpers
  * =========================== */
-@media only screen and (min-width: var(--small)){
+@media only screen and (min-width: var(--xsmall)){
   .grid[style*="--col-xs:"] {
     grid-template-columns: repeat(var(--col-xs, 1), 1fr);
   }
@@ -1287,6 +1287,17 @@ mark {
   }
   .grid > [style*="--sr-xs:"] {
     grid-row: span var(--sr-xs, 1);
+  }
+}
+@media only screen and (min-width: var(--small)){
+  .grid[style*="--col-sm:"] {
+    grid-template-columns: repeat(var(--col-sm, 1), 1fr);
+  }
+  .grid > [style*="--sc-sm:"] {
+    grid-column: span var(--sc-sm, 1);
+  }
+  .grid > [style*="--sr-sm:"] {
+    grid-row: span var(--sr-sm, 1);
   }
   .--bg0, [style*="--bg0-sm:"] {
     background: var(--bg0-sm);
@@ -1578,14 +1589,14 @@ mark {
   }
 }
 @media only screen and (min-width: var(--medium)){
-  .grid[style*="--col-sm:"] {
-    grid-template-columns: repeat(var(--col-sm, 1), 1fr);
+  .grid[style*="--col-md:"] {
+    grid-template-columns: repeat(var(--col-md, 1), 1fr);
   }
-  .grid > [style*="--sc-sm:"] {
-    grid-column: span var(--sc-sm, 1);
+  .grid > [style*="--sc-md:"] {
+    grid-column: span var(--sc-md, 1);
   }
-  .grid > [style*="--sr-sm:"] {
-    grid-row: span var(--sr-sm, 1);
+  .grid > [style*="--sr-md:"] {
+    grid-row: span var(--sr-md, 1);
   }
   .--bg0, [style*="--bg0-md:"] {
     background: var(--bg0-md);
@@ -1877,14 +1888,14 @@ mark {
   }
 }
 @media only screen and (min-width: var(--large)){
-  .grid[style*="--col-md:"] {
-    grid-template-columns: repeat(var(--col-md, 1), 1fr);
+  .grid[style*="--col-lg:"] {
+    grid-template-columns: repeat(var(--col-lg, 1), 1fr);
   }
-  .grid > [style*="--sc-md:"] {
-    grid-column: span var(--sc-md, 1);
+  .grid > [style*="--sc-lg:"] {
+    grid-column: span var(--sc-lg, 1);
   }
-  .grid > [style*="--sr-md:"] {
-    grid-row: span var(--sr-md, 1);
+  .grid > [style*="--sr-lg:"] {
+    grid-row: span var(--sr-lg, 1);
   }
   .--bg0, [style*="--bg0-lg:"] {
     background: var(--bg0-lg);
@@ -2176,15 +2187,6 @@ mark {
   }
 }
 @media only screen and (min-width: var(--xlarge)){
-  .grid[style*="--col-lg:"] {
-    grid-template-columns: repeat(var(--col-lg, 1), 1fr);
-  }
-  .grid > [style*="--sc-lg:"] {
-    grid-column: span var(--sc-lg, 1);
-  }
-  .grid > [style*="--sr-lg:"] {
-    grid-row: span var(--sr-lg, 1);
-  }
   .--bg0, [style*="--bg0-xl:"] {
     background: var(--bg0-xl);
   }
