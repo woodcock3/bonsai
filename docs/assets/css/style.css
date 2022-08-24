@@ -42,6 +42,7 @@
   --gutter-lg: calc(var(--gutter)*2);
   --gutter-xl: calc(var(--gutter)*2);
   --wrapper: var(75em);
+  --tiny: var(25em);
   --small: var(37.5em);
   --medium: var(50em);
   --large: var(62.5em);
