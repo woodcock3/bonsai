@@ -1,5 +1,3 @@
-@use '../variables' with ($mobile: 37.5em, $tablet: 50em, $desktop: 62.5em, $wide: 75em);
-
 .grid {
   display: grid;
   grid-template-columns: repeat(var(--col, 1), 1fr);
