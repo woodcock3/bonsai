@@ -8,22 +8,22 @@
   [style*="#{$value}:"] {
     $prop: var($value) !default;
   }
-  @media only screen and (min-width: var(--sm-viewport)) {
+  @media only screen and (min-width: $mobile) {
     [style*="#{$value}-sm:"] {
       $prop: var(($value)-sm) !default;
     }
   }
-  @media only screen and (min-width: var(--md-viewport)) {
+  @media only screen and (min-width: $tablet) {
     [style*="#{$value}-md:"] {
       $prop: var(($value)-md) !default;
     }
   }
-  @media only screen and (min-width: var(--lg-viewport)) {
+  @media only screen and (min-width: $desktop) {
     [style*="#{$value}-lg:"] {
       $prop: var(($value)-lg) !default;
     }
   }
-  @media only screen and (min-width: var(--xl-viewport)) {
+  @media only screen and (min-width: $wide) {
     [style*="#{$value}-xl:"] {
       $prop: var(($value)-xl) !default;
     }
