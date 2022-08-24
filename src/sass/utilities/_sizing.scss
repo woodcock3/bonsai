@@ -1,0 +1,9 @@
+/* Sizing */
+@use '../mixins.scss' as m;
+
+@include m.svar-mq (width, --w);
+@include m.svar-mq (height, --h);
+@include m.svar-mq (min-width, --minw);
+@include m.svar-mq (min-height, --minh);
+@include m.svar-mq (max-width, --maxw);
+@include m.svar-mq (max-height, --maxh);
