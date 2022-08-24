@@ -1,0 +1,6 @@
+/* Transform */
+@use '../mixins.scss' as m;
+
+@include m.svar-mq (transform, --t);
+@include m.svar-mq (transform-origin, --to);
+@include m.svar-mq (transform-style, --tc);
