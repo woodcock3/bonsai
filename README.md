@@ -4,7 +4,7 @@
 
 # bonsai.sass
 
-**A complete Utility First CSS Framework for less than 55 KB (8 KB Gzipped)**
+**A complete Utility First CSS Framework for less than 55 KB (8 KB Gzipped) and if implimenting [purgecss](https://purgecss.com) likely under 5KB**
 
 Bonsai SASS is a super lightweight, fully responsive, utility first framework. All you need to build beautifully crafted web interfaces with ease.
 
