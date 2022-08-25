@@ -33,7 +33,7 @@ npm run watch
 ```
 
 ## Documentation
-For full documentation, visit [https://www.bonsaicss.com](https://www.bonsaicss.com).
+For full documentation, visit [bonsaisass.github.io](https://www.woodcock3.github.io/bonsai).
 
 ## Credits
 Bonsai.sass is has been ported from Bonsai.css and has been rebuilt using [sass](https://sass-lang.com) and [npm scripts](https://www.npmjs.com). The documentation is built using [eleventy](https://www.11ty.dev). Whereas the original [Bonsai.css](https://www.bonsaicss.com) was built using [postcss](https://postcss.org) and [gulp](https://gulpjs.com) by [Ciaran Walsh](https://github.com/ciar4n) and [Yves Hoppe](https://github.com/yvesh) fron 2020-2021.
