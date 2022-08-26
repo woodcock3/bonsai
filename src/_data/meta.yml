@@ -1,7 +1,8 @@
 env: process.env.ELEVENTY_ENV
 
-# Author
-name: "Bonsai SASS - A Utility Complete CSS Framework for less than 10kb | Bonsai.sass"
+# Authoring
+name: Bonsai SASS
+description: A Utility Complete CSS Framework for less than 10kb | Bonsai.sass
 author: Rusticola
 myurl: https://rusticola.co.uk/
 github_url: https://github.com/woodcock3/bonsai
