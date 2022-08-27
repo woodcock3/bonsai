@@ -1,5 +1,7 @@
 /* Layout Helpers */
 
+@use '../variable.scss' as v;
+
 .wrapper,
 [style*="--wrapper:"] {
   max-width: var(--wrapper);
