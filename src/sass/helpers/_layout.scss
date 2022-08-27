@@ -10,7 +10,7 @@
   padding-left: var(--gutter);
   padding-right: var(--gutter);
 
-  @media only screen and (min-width: var(--small)) {
+  @media only screen and (min-width: v.$small) {
     --gutter: var(--gutter-sm);
   }
   @media only screen and (min-width: var(--medium)) {
