@@ -1,9 +1,16 @@
 /* Breakpoints */
-$watch: 25em !default;
-$mobile: 37.5em !default;
-$tablet: 50em !default;
-$desktop: 62.5em !default;
-$wide: 75em !default;
+$watch: 25em !default; // 400px
+$mobile: 37.5em !default; // 600px
+$tablet: 50em !default; // 800px
+$desktop: 62.5em !default; // 1000px
+$wide: 75em !default; // 1200px
+
+/* Containers */
+$tiny: $watch;
+$small: $mobile;
+$medium: $tablet;
+$large: $desktop;
+$x-large: $wide;
 
 :root {
   --white: #fff;
