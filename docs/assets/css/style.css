@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* Breakpoints */
+/* Containers */
 :root {
   --white: #fff;
   --grey: #e6e6e6;
@@ -1584,10 +1585,6 @@ mark {
   .--bs-sm, [style*="--bs-sm:"] {
     box-shadow: var(--bs-sm);
   }
-  .wrapper,
-[style*="--wrapper:"] {
-    --gutter: var(--gutter-sm);
-  }
 }
 @media only screen and (min-width: var(--medium)){
   .grid[style*="--col-md:"] {
@@ -2475,5 +2472,11 @@ mark {
   .wrapper,
 [style*="--wrapper:"] {
     --gutter: var(--gutter-xl);
+  }
+}
+@media only screen and (min-width: 37.5em){
+  .wrapper,
+[style*="--wrapper:"] {
+    --gutter: var(--gutter-sm);
   }
 }
