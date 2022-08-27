@@ -1,3 +1,5 @@
+@use 'variables.scss' as *;
+
 @mixin svar($prop, $value) {
   .#{$value}, [style*="#{$value}:"] {
     #{$prop}: var(#{$value});
@@ -8,22 +10,22 @@
   .#{$value}, [style*="#{$value}:"] {
     #{$prop}: var(#{$value});
   }
-  @media only screen and (min-width: var(--small)) {
+  @media only screen and (min-width: $small) {
     .#{$value}-sm, [style*="#{$value}-sm:"] {
       #{$prop}: var(#{$value}-sm);
     }
   }
-  @media only screen and (min-width: var(--medium)) {
+  @media only screen and (min-width: $medium) {
     .#{$value}-md, [style*="#{$value}-md:"] {
       #{$prop}: var(#{$value}-md);
     }
   }
-  @media only screen and (min-width: var(--large)) {
+  @media only screen and (min-width: $large) {
     .#{$value}-lg, [style*="#{$value}-lg:"] {
       #{$prop}: var(#{$value}-lg);
     }
   }
-  @media only screen and (min-width: var(--xlarge)) {
+  @media only screen and (min-width: $xlarge) {
     .#{$value}-xl, [style*="#{$value}-xl:"] {
       #{$prop}: var(#{$value}-xl);
     }
