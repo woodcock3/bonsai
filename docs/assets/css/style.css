@@ -1301,42 +1301,6 @@ mark {
   .grid > [style*="--sr-sm:"] {
     grid-row: span var(--sr-sm, 1);
   }
-  .wrapper,
-[style*="--wrapper:"] {
-    --gutter: var(--gutter-sm);
-  }
-}
-@media only screen and (min-width: 50em){
-  .grid[style*="--col-md:"] {
-    grid-template-columns: repeat(var(--col-md, 1), 1fr);
-  }
-  .grid > [style*="--sc-md:"] {
-    grid-column: span var(--sc-md, 1);
-  }
-  .grid > [style*="--sr-md:"] {
-    grid-row: span var(--sr-md, 1);
-  }
-  .wrapper,
-[style*="--wrapper:"] {
-    --gutter: var(--gutter-md);
-  }
-}
-@media only screen and (min-width: 62.5em){
-  .grid[style*="--col-lg:"] {
-    grid-template-columns: repeat(var(--col-lg, 1), 1fr);
-  }
-  .grid > [style*="--sc-lg:"] {
-    grid-column: span var(--sc-lg, 1);
-  }
-  .grid > [style*="--sr-lg:"] {
-    grid-row: span var(--sr-lg, 1);
-  }
-  .wrapper,
-[style*="--wrapper:"] {
-    --gutter: var(--gutter-lg);
-  }
-}
-@media only screen and (min-width: var(--small)){
   .--bg-sm, [style*="--bg-sm:"] {
     background: var(--bg-sm);
   }
@@ -1621,8 +1585,21 @@ mark {
   .--bs-sm, [style*="--bs-sm:"] {
     box-shadow: var(--bs-sm);
   }
+  .wrapper,
+[style*="--wrapper:"] {
+    --gutter: var(--gutter-sm);
+  }
 }
-@media only screen and (min-width: var(--medium)){
+@media only screen and (min-width: 50em){
+  .grid[style*="--col-md:"] {
+    grid-template-columns: repeat(var(--col-md, 1), 1fr);
+  }
+  .grid > [style*="--sc-md:"] {
+    grid-column: span var(--sc-md, 1);
+  }
+  .grid > [style*="--sr-md:"] {
+    grid-row: span var(--sr-md, 1);
+  }
   .--bg-md, [style*="--bg-md:"] {
     background: var(--bg-md);
   }
@@ -1907,8 +1884,21 @@ mark {
   .--bs-md, [style*="--bs-md:"] {
     box-shadow: var(--bs-md);
   }
+  .wrapper,
+[style*="--wrapper:"] {
+    --gutter: var(--gutter-md);
+  }
 }
-@media only screen and (min-width: var(--large)){
+@media only screen and (min-width: 62.5em){
+  .grid[style*="--col-lg:"] {
+    grid-template-columns: repeat(var(--col-lg, 1), 1fr);
+  }
+  .grid > [style*="--sc-lg:"] {
+    grid-column: span var(--sc-lg, 1);
+  }
+  .grid > [style*="--sr-lg:"] {
+    grid-row: span var(--sr-lg, 1);
+  }
   .--bg-lg, [style*="--bg-lg:"] {
     background: var(--bg-lg);
   }
@@ -2193,8 +2183,12 @@ mark {
   .--bs-lg, [style*="--bs-lg:"] {
     box-shadow: var(--bs-lg);
   }
+  .wrapper,
+[style*="--wrapper:"] {
+    --gutter: var(--gutter-lg);
+  }
 }
-@media only screen and (min-width: var(--xlarge)){
+@media only screen and (min-width: 75em){
   .--bg-xl, [style*="--bg-xl:"] {
     background: var(--bg-xl);
   }
@@ -2479,8 +2473,6 @@ mark {
   .--bs-xl, [style*="--bs-xl:"] {
     box-shadow: var(--bs-xl);
   }
-}
-@media only screen and (min-width: 75em){
   .wrapper,
 [style*="--wrapper:"] {
     --gutter: var(--gutter-xl);
