@@ -1280,7 +1280,7 @@ mark {
 /* ===========================
  * Helpers
  * =========================== */
-@media only screen and (min-width: var(--xsmall)){
+@media only screen and (min-width: 25em){
   .grid[style*="--col-xs:"] {
     grid-template-columns: repeat(var(--col-xs, 1), 1fr);
   }
@@ -1291,7 +1291,7 @@ mark {
     grid-row: span var(--sr-xs, 1);
   }
 }
-@media only screen and (min-width: var(--small)){
+@media only screen and (min-width: 37.5em){
   .grid[style*="--col-sm:"] {
     grid-template-columns: repeat(var(--col-sm, 1), 1fr);
   }
@@ -1301,6 +1301,42 @@ mark {
   .grid > [style*="--sr-sm:"] {
     grid-row: span var(--sr-sm, 1);
   }
+  .wrapper,
+[style*="--wrapper:"] {
+    --gutter: var(--gutter-sm);
+  }
+}
+@media only screen and (min-width: 50em){
+  .grid[style*="--col-md:"] {
+    grid-template-columns: repeat(var(--col-md, 1), 1fr);
+  }
+  .grid > [style*="--sc-md:"] {
+    grid-column: span var(--sc-md, 1);
+  }
+  .grid > [style*="--sr-md:"] {
+    grid-row: span var(--sr-md, 1);
+  }
+  .wrapper,
+[style*="--wrapper:"] {
+    --gutter: var(--gutter-md);
+  }
+}
+@media only screen and (min-width: 62.5em){
+  .grid[style*="--col-lg:"] {
+    grid-template-columns: repeat(var(--col-lg, 1), 1fr);
+  }
+  .grid > [style*="--sc-lg:"] {
+    grid-column: span var(--sc-lg, 1);
+  }
+  .grid > [style*="--sr-lg:"] {
+    grid-row: span var(--sr-lg, 1);
+  }
+  .wrapper,
+[style*="--wrapper:"] {
+    --gutter: var(--gutter-lg);
+  }
+}
+@media only screen and (min-width: var(--small)){
   .--bg-sm, [style*="--bg-sm:"] {
     background: var(--bg-sm);
   }
@@ -1587,15 +1623,6 @@ mark {
   }
 }
 @media only screen and (min-width: var(--medium)){
-  .grid[style*="--col-md:"] {
-    grid-template-columns: repeat(var(--col-md, 1), 1fr);
-  }
-  .grid > [style*="--sc-md:"] {
-    grid-column: span var(--sc-md, 1);
-  }
-  .grid > [style*="--sr-md:"] {
-    grid-row: span var(--sr-md, 1);
-  }
   .--bg-md, [style*="--bg-md:"] {
     background: var(--bg-md);
   }
@@ -1882,15 +1909,6 @@ mark {
   }
 }
 @media only screen and (min-width: var(--large)){
-  .grid[style*="--col-lg:"] {
-    grid-template-columns: repeat(var(--col-lg, 1), 1fr);
-  }
-  .grid > [style*="--sc-lg:"] {
-    grid-column: span var(--sc-lg, 1);
-  }
-  .grid > [style*="--sr-lg:"] {
-    grid-row: span var(--sr-lg, 1);
-  }
   .--bg-lg, [style*="--bg-lg:"] {
     background: var(--bg-lg);
   }
@@ -2460,24 +2478,6 @@ mark {
   }
   .--bs-xl, [style*="--bs-xl:"] {
     box-shadow: var(--bs-xl);
-  }
-}
-@media only screen and (min-width: 37.5em){
-  .wrapper,
-[style*="--wrapper:"] {
-    --gutter: var(--gutter-sm);
-  }
-}
-@media only screen and (min-width: 50em){
-  .wrapper,
-[style*="--wrapper:"] {
-    --gutter: var(--gutter-md);
-  }
-}
-@media only screen and (min-width: 62.5em){
-  .wrapper,
-[style*="--wrapper:"] {
-    --gutter: var(--gutter-lg);
   }
 }
 @media only screen and (min-width: 75em){
