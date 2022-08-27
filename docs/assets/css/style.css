@@ -1880,10 +1880,6 @@ mark {
   .--bs-md, [style*="--bs-md:"] {
     box-shadow: var(--bs-md);
   }
-  .wrapper,
-[style*="--wrapper:"] {
-    --gutter: var(--gutter-md);
-  }
 }
 @media only screen and (min-width: var(--large)){
   .grid[style*="--col-lg:"] {
@@ -2179,10 +2175,6 @@ mark {
   .--bs-lg, [style*="--bs-lg:"] {
     box-shadow: var(--bs-lg);
   }
-  .wrapper,
-[style*="--wrapper:"] {
-    --gutter: var(--gutter-lg);
-  }
 }
 @media only screen and (min-width: var(--xlarge)){
   .--bg-xl, [style*="--bg-xl:"] {
@@ -2469,14 +2461,28 @@ mark {
   .--bs-xl, [style*="--bs-xl:"] {
     box-shadow: var(--bs-xl);
   }
-  .wrapper,
-[style*="--wrapper:"] {
-    --gutter: var(--gutter-xl);
-  }
 }
 @media only screen and (min-width: 37.5em){
   .wrapper,
 [style*="--wrapper:"] {
     --gutter: var(--gutter-sm);
+  }
+}
+@media only screen and (min-width: 50em){
+  .wrapper,
+[style*="--wrapper:"] {
+    --gutter: var(--gutter-md);
+  }
+}
+@media only screen and (min-width: 62.5em){
+  .wrapper,
+[style*="--wrapper:"] {
+    --gutter: var(--gutter-lg);
+  }
+}
+@media only screen and (min-width: 75em){
+  .wrapper,
+[style*="--wrapper:"] {
+    --gutter: var(--gutter-xl);
   }
 }
