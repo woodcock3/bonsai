@@ -1,11 +1,21 @@
-<footer class="">
-  <small class="">
-    Copyright © {{ meta.name }} {{ "now" | date: "%Y" }}. 
-    Made with ❤ by
-    <a href="{{ meta.myurl }}" target="_blank" class="underline" rel="noopener">{{ meta.author }}</a>
-    •
-    <a href="{{ meta.github_url }}" class="underline" target="_blank" rel="noopener">Github</a>
-  </small>
+<footer class="book-footer">
+  <div style="--d:flex; --jc:center; --fd:column">
+    <div style="--ta:center; --mb:1rem">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div style="--m:auto; --ta:center; --op:.7">
+      <p style="--mb:0">Copyright © {{ meta.name }} {{ "now" | date: "%Y" }}.</p>
+      <p style="--mb:0"> Made with ❤ by <a href="{{ meta.myurl }}" target="_blank" class="underline" rel="noopener">{{ meta.author }}</a> • <a href="{{ meta.github_url }}" class="underline" target="_blank" rel="noopener">Github</a>
+      <p style="--mb:0">Carefully crafted by the Bonsai.css team with the help of <a href="https://github.com/bonsaicss/bonsai.css/graphs/contributors">our contributors</a>.</p>
+      <p style="--mb:2rem">Bonsai.css licensed <a href="hhttps://github.com/bonsaicss/bonsai.css/blob/master/LICENSE.md" target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</p>
+    </div>
+  </div>   
 </footer>
+<div class="book-comments"></div>
+<label for="menu-control" class="hidden book-menu-overlay"></label>
+</main>
+<script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
 </body>
 </html>
