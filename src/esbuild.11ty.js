@@ -11,7 +11,7 @@ module.exports = class {
   }
 
   async render() {
-    await esbuild.build({
+    await esbuild.buildSync({
       entryPoints: glob.sync(['assets/js/*.js']),
       bundle: true,
       minify: isProd,
