@@ -34,7 +34,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget('./src/sass/postcss.config.js');
   eleventyConfig.addWatchTarget('./src/sass/style.scss');
 
-  eleventyConfig.addPassthroughCopy({ './_tmp/style.css': './assets/css/style.css' });
+  eleventyConfig.addPassthroughCopy({ './_tmp': './assets/css' });
 
   // WATCH the js files for esbuild in scripts.11ty.js
   eleventyConfig.addWatchTarget("./assets/js");
