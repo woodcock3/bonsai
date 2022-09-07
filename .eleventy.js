@@ -22,6 +22,7 @@ module.exports = function (eleventyConfig) {
     "./assets/js/site.js": "./assets/js/site.js",
     "./expected": "./expected",
     "./icons": "./assets/icons",
+    "./assets/svg": "./assets/svg",
   });
 
   // Copy Image Folder to /_site
