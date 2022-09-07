@@ -26,7 +26,7 @@ module.exports = function (eleventyConfig) {
   });
 
   // Copy Image Folder to /_site
-  eleventyConfig.addPassthroughCopy("./src/assets/image");
+  eleventyConfig.addPassthroughCopy("./src/assets/css");
 
   // Copy favicon to route of /_site
   eleventyConfig.addPassthroughCopy({"./logo.png": "./assets/logo.png"});
