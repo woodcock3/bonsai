@@ -20,7 +20,6 @@ module.exports = function (eleventyConfig) {
   // Copy Static Files to /_Site
   eleventyConfig.addPassthroughCopy({
     "./assets/js/site.js": "./assets/js/site.js",
-    "./expected": "./expected",
     "./icons": "./assets/icons",
     "./assets/svg": "./assets/svg",
   });
