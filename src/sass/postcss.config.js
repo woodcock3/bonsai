@@ -23,6 +23,6 @@ module.exports = {
   plugins: [
     autoprefixer,
     postcssCombineMediaQuery,
-    ...(process.env.NODE_ENV === "production" ? [cssnano, purgecss] : [])
+    ...(process.env.NODE_ENV === "production" ? [cssnano] : [])
   ],
 };
