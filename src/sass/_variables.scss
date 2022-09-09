@@ -1,11 +1,19 @@
-/* Breakpoints */
+/*! 
+ * Bonsai Sass | MIT License
+ *
+ * Author: Woodcock3
+ * Source: https://github.com/woodcock3/bonsai
+ * Documentation: https://woodcock3.github.io/bonsai/docs/
+ *
+ * Credit: Bonsai CSS | https://github.com/bonsaicss/bonsai.css
+ */
+
 $watch: 25em !default; // 400px
 $mobile: 37.5em !default; // 600px
 $tablet: 50em !default; // 800px
 $desktop: 62.5em !default; // 1000px
 $wide: 75em !default; // 1200px
 
-/* Containers */
 $tiny: $watch;
 $small: $mobile;
 $medium: $tablet;
