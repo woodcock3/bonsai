@@ -14,7 +14,6 @@
     "@11ty/eleventy": "^1.0.2",
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "autoprefixer": "^10.4.12",
-    "browser-sync": "^2.27.10",
     "cssnano": "^5.1.13",
     "esbuild": "^0.15.10",
     "glob-all": "^3.3.0",
