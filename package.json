@@ -23,7 +23,7 @@
     "postcss": "^8.4.18",
     "postcss-cli": "^10.0.0",
     "postcss-combine-media-query": "^1.0.1",
-    "postcss-import": "^15.0.0",
+    "postcss-import": "^15.1.0",
     "sass": "^1.55.0"
   },
   "name": "bonsai",
