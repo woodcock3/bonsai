@@ -32,7 +32,7 @@
   "main": ".eleventy.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/woodcock3/bonsai.git"
+    "url": "git+https://github.com/woodcox/bonsai.git"
   },
   "keywords": [
     "css",
@@ -41,10 +41,10 @@
     "sass",
     "scss"
   ],
-  "author": "woodcock3",
+  "author": "woodcox",
   "license": "ISC",
-  "bugs": "https://github.com/woodcock3/bonsai/issues",
-  "homepage": "https://github.com/woodcock3/bonsai",
+  "bugs": "https://github.com/woodcox/bonsai/issues",
+  "homepage": "https://github.com/woodcox/bonsai",
   "browserslist": [
     "> 0.5%",
     "not IE 11"
